@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS classes -->    
+    <!-- -->
     <style>
         body {
             background-color: #d9f2ffd4;
@@ -29,6 +30,32 @@
             flex-direction:column; 
 
         }
+        
+        .section-container{
+            color: black;
+            font-size: 14px;
+            background-color: #b0e1f9;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 10px;
+        }
+
+        .header-container{
+            color: black;
+            background-color: #ffffff;
+            font-size: 14px;
+            background-image: url('Blackhole.svg');
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 50px;
+        }
+
+        .text-block{
+            text-align: justify;
+        }
 
         .profile-pic{
             border-radius: 50%;
@@ -36,6 +63,12 @@
             height: 300px;
             object-fit: cover;
             object-position: center right;
+        }
+
+        .blackhole-pic{
+            height: 400pX;
+            object-fit: cover;
+            opacity: 0.8;
         }
 
         .profile-container{
@@ -60,19 +93,6 @@
             color: black;
             font-size: 12px;
             font-weight: bold;
-        }
-
-        .section-container{
-            color: black;
-            font-size: 14px;
-            background-color: #b0e1f9;
-            padding-left: 100px;
-            padding-right: 100px;
-            padding-bottom: 10px;
-        }
-
-        .text-block{
-            text-align: justify;
         }
 
         .pdf-block{
@@ -102,6 +122,7 @@
         .project-container{
             padding-left: 10px;
         }
+        
     </style>
 
 </head>
@@ -109,35 +130,37 @@
 <body>
 
     <!-- Title Profile-->
-    <div class="section-container">
-        <div>
-            <h1>
-                Joachim Pomper, BSc <br>
-                <span style="font-size:20px">
-                    Physics master student at University of Graz.
-                </span>
-            </h1>
-        </div>
-        
-        <div class="profile-container">
-
-            <img class="profile-pic" src="Graphix/profile_pic.jpg" alt="Avatar">
-
-            <div class="social-media-container">
+    <div class="header-container">
+        <div style="display:flex;flex-direction:row;align-items:flex-start">
+            <div>
+                <h1>
+                    Joachim Pomper, BSc <br>
+                    <span style="font-size:20px">
+                        Physics master student at University of Graz.
+                    </span>
+                </h1>
             
-                <a class="social-media-link" href="https://twitter.com/JoachimPomper">
-                <i class="fa fa-twitter" style="font-size:12px;color:black"> </i> Joachim Pomper </a>  
+                <div class="profile-container">
 
-                <a class="social-media-link" href="https://github.com/HoneyBadger220497">
-                &nbsp;&nbsp;
-                <i class="fa fa-github" style="font-size:12px;color:black"></i> HoneyBadger220497</a>   
+                    <img class="profile-pic" src="Graphix/profile_pic.jpg" alt="Avatar">
 
-                <a class="social-media-link" href="mailto:joachim.pomper@edu.uni-graz.at">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                <i class="fa fa-envelope" style="font-size:12px;color:black"></i> joachim.pomper@edu.uni-graz.at</a>
-    
+                    <div class="social-media-container">
+                    
+                        <a class="social-media-link" href="https://twitter.com/JoachimPomper">
+                        <i class="fa fa-twitter" style="font-size:12px;color:black"> </i> Joachim Pomper </a>  
+
+                        <a class="social-media-link" href="https://github.com/HoneyBadger220497">
+                        &nbsp;&nbsp;
+                        <i class="fa fa-github" style="font-size:12px;color:black"></i> HoneyBadger220497</a>   
+
+                        <a class="social-media-link" href="mailto:joachim.pomper@edu.uni-graz.at">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                        <i class="fa fa-envelope" style="font-size:12px;color:black"></i> joachim.pomper@edu.uni-graz.at</a>
+            
+                    </div>
+                </div>
             </div>
-    
+
         </div>
     </div>
     
