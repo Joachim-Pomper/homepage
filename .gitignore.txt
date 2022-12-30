@@ -1,0 +1,2 @@
+# Ignore all matlab figures
+*.fig
