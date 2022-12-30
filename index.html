@@ -20,7 +20,8 @@
     <!-- CSS classes -->    
     
     <link rel="stylesheet" href="Stylesheets/basicContainer.css">
-    
+    <link rel="stylesheet" href="Stylesheets/projectDisplays.css">
+
     <style>
         .head-container{
             color: black;
@@ -94,7 +95,7 @@
             background-color: #9cc7ff;
         }
 
-        .pdf-block{
+        .link-list{
             padding-left: 10px;
             padding-top: 10px;
             color: black;
@@ -156,9 +157,9 @@
         </span>
         <div class="nav-bar">
             <a class="nav-button" href="#aboutme"> Research </a>
-            <a class="nav-button" href="#Conference"> Conferenz talks </a>
+            <a class="nav-button" href="#conference"> Conferenz talks </a>
             <a class="nav-button" href="#theses"> Theses </a>
-            <a class="nav-button" href="#Aboutme"> Student projects </a>
+            <a class="nav-button" href="#aboutme"> Student projects </a>
         </div>
     </div> 
     <!-- About me -->
@@ -182,10 +183,44 @@
         <h2>
             Conference talks
         </h2>
-        <div class="pdf-block">
-            <a class="pdf-link" href="pdf/presentations/DSU2022_CompositeDarkMatterFromNonAbelianGaugeTheoriesWithRealRepresentations.pdf">DSU_2022 in Sydney</a>
-            
-            <a class="pdf-link" href="pdf/presentations/OEPG2022_LowEnergyEffectiveDescriptionOfSP4TheoryWithMatterInNonFundamentalRepresentations.pdf">ÖPG_2022 in Leoben</a>
+        <div class="project-container">
+            <div class="project-info">
+                <span class="project-specbox">
+                    DSU 2022 <br> Sydney
+                </span> 
+                <span class="project-title-box">
+                    Title: 
+                </span>
+                <span class="project-title" >
+                    Composite dark matter from non-abelian gauge theories with real representations.
+                </span>
+            </div>
+            <div class="project-refs">
+                <a href="talks/DSU_2022/DSU2022_CompositeDarkMatterFromNonAbelianGaugeTheoriesWithRealRepresentations.pdf">
+                    <div class="thumbnail" style="background-image: url('talks/DSU_2022/thumbnail.PNG')">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-info">
+                <span class="project-specbox">
+                    ÖPG 2022 <br> Leoben
+                </span> 
+                <span class="project-title-box">
+                    Title: 
+                </span>
+                <span class="project-title">
+                    Low energy effective description of Sp(4) theory with matter in non fundamental representations.
+                </span>
+            </div>
+            <div class="project-refs">
+                <a href="talks/ÖPG_2022/OEPG2022_LowEnergyEffectiveDescriptionOfSP4TheoryWithMatterInNonFundamentalRepresentations.pdf">
+                    <div class="thumbnail" style="background-image: url('talks/ÖPG_2022/thumbnail.PNG')">
+                    </div>
+                </a>
+            </div>
         </div>
         
     </div>
@@ -197,18 +232,37 @@
             Theses
         </h2>
         <div class="project-container">
-            <span style="font-size:15px;font-weight: bold;">
-                Bacherlor thesis
-            </span> 
-            <br>
-            <span style="font-size:14px;font-weight: bold;">
-                Title: 
-            </span>
-            Analytische Berechnung der spontanen Magnetisierung von isotropen homogenen Ising Ferromagneten unter der Verwendung von Graßmann Zahlen. 
-            
-            <div class="pdf-block">
+            <div class="project-info">
+                <span class="project-specbox">
+                    Bachelor <br> thesis
+                </span> 
+                <span class="project-title-box">
+                    Title: 
+                </span>
+                <span class="project-title">
+                    Analytische Berechnung der spontanen Magnetisierung von isotropen homogenen Ising Ferromagneten unter der Verwendung von Graßmann Zahlen 
+                </span>
+            </div>
+            <div class="project-refs">
                 <a class="pdf-link" href="pdf/theses/Bachelor/BachelorThesis.pdf">Thesis</a>
                 <a class="pdf-link" href="pdf/theses/Bachelor/BachelorPresentation.pdf">Presentation</a>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-info">
+                <span class="project-specbox">
+                    Master <br> thesis
+                </span> 
+                <span class="project-title-box">
+                    Title: 
+                </span>
+                <span class="project-title">
+                    Low energy effective description of strongly interaction dark matter from QCD like gauge theories with fermions in real representations.
+                </span>
+            </div>
+            <div class="project-refs">
+                <a class="pdf-link" href="#aboutme">WIP</a>
             </div>
         </div>
         
@@ -220,21 +274,94 @@
         <h2>
             Project works from my times as a master-student
         </h2>
-        <div class="pdf-block">
-            <a class="pdf-link" href="pdf/project_notes/A_simple_way_to_explain_phenomena_at_the_event_horizon_of_a_static_black_hole.pdf">A Simple way to explain phenomena at the event horizion of a static black hole</a>
-            <a class="pdf-link" href="pdf/project_notes/Functional_renormalization_group_approach_for_interacting_Dirac_fermions.pdf">Functional renormalization group approach for interacting Dirac fermions</a>
-            <a class="pdf-link" href="pdf/project_notes/Particle_creation_in_expanding_universe.pdf">Particle creation in expanding universe.pdf</a>
+        <div style="padding-top:15px;"></div>
+        <div class="project-container">
+            <div class="project-info">
+                <span class="project-specbox" style="min-width:160px;">
+                    <a href="projects/UniversityCourseProjects/Blackhole/Presentation_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">
+                        <div class="thumbnail" style="background-image: url('projects/UniversityCourseProjects/Blackhole/thumbnail.jfif')">
+                        </div>
+                    </a>
+                </span> 
+                <span class="project-title-box">
+                    Title: 
+                </span>
+                <span class="project-title">
+                    A simple way to explain phenomena at the event horizion of a static black hole. 
+                </span>
+            </div>
+            <div class="project-refs">
+                <a class="pdf-link" href="projects/UniversityCourseProjects/Blackhole/Notes_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">Notes</a>
+                <a class="pdf-link" href="projects/UniversityCourseProjects/Blackhole/Presentation_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">Presentation</a>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-info">
+                <span class="project-specbox" style="min-width:160px;">
+                    <a href="projects/UniversityCourseProjects/ParticleCreation/Notes_ParticleCreationInAnExpandingUniverse.pdf">
+                        <div class="thumbnail" style="background-image: url('projects/UniversityCourseProjects/ParticleCreation/thumbnail.PNG')">
+                        </div>
+                    </a>
+                </span> 
+                <span class="project-title-box">
+                    Title: 
+                </span>
+                <span class="project-title">
+                    Particle creation in an expanding universe. 
+                </span>
+            </div>
+            <div class="project-refs">
+                <a class="pdf-link" href="projects/UniversityCourseProjects/ParticleCreation/Notes_ParticleCreationInAnExpandingUniverse.pdf">Notes</a>
+                <a class="pdf-link" href="projects/UniversityCourseProjects/ParticleCreation/Presentation_ParticleCreationInAnExpandingUniverse.pdf">Presentation</a>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-info">
+                <span class="project-specbox" style="min-width:160px;">
+                    <a href="projects/UniversityCourseProjects/FRG/Notes_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">
+                        <div class="thumbnail" style="background-image: url('projects/UniversityCourseProjects/FRG/thumbnail.PNG')">
+                        </div>
+                    </a>
+                </span> 
+                <span class="project-title-box">
+                    Title: 
+                </span>
+                <span class="project-title">
+                    Functional Renormalization Group approach for interaction Dirac fermions 
+                </span>
+            </div>
+            <div class="project-refs">
+                <a class="pdf-link" href="projects/UniversityCourseProjects/FRG/Notes_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">Notes</a>
+                <a class="pdf-link" href="projects/UniversityCourseProjects/FRG/Presentation_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">Presentation</a>
+            </div>
         </div>
         
     </div>
 
     <div class="section-container">
         <h2>
-            Master Seminar Presentations
+            Master Seminar presentations
         </h2>
-        <div class="pdf-block">
-            <a class="pdf-link" href="pdf/presentations/MasterSeminar_Introduction_to_dak_matter_phenomenology.pdf">Introduction to dak matter phenomenology</a>
-            <a class="pdf-link" href="pdf/Presentations/MasterSeminar_Strongly_interactind_dark_matter_from_real_gauge_group_representations.pdf">Strongly interactind dark matter from real gauge group representations</a>
+        <div class="project-container">
+            <div class="project-info">
+                <span class="project-specbox">
+                    Master <br> seminar
+                </span> 
+                <span class="project-title-box">
+                    Title: 
+                </span>
+                <span class="project-title">
+                    A students introduction to dark matter phenomenology.
+                </span>
+            </div>
+            <div class="project-refs">
+                <a href="projects/MasterSeminar/DMPheno/MasterSeminar_Introduction_to_dak_matter_phenomenology.pdf">
+                    <div class="thumbnail" style="background-image: url('projects/MasterSeminar/DMPheno/thumbnail.PNG')">
+                    </div>
+                </a>
+            </div>
         </div>
         
     </div>

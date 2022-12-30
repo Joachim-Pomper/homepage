@@ -1,0 +1,59 @@
+/* general */
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+
+.project-info{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    max-width:700px;
+    margin-right: 3px;
+}
+
+.project-refs{
+    display: flex;
+    justify-content:flex-start;
+    align-items: left;
+    flex-direction: column;
+    width: 100px;
+    gap: 10px;
+}
+
+.project-title{
+    font-size: 14px;
+}
+
+.project-title-box{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.project-specbox{
+    font-size:15px;
+    font-weight:bold;
+    margin-right:15px;
+    min-width:100px;
+}
+
+
+.thumbnail{
+    height: 90px;
+    width: 160px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thumbnail:hover{
+    height: 90px;
+    width: 160px;
+    background-size: 95% 95%;
+    background-color: rgb(101, 124, 255);
+}
+
