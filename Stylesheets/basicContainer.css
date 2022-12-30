@@ -1,0 +1,58 @@
+/* Body and background */
+
+body {
+    background-color: #d9f2ffd4;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    display:flex;
+    flex-direction:column; 
+}
+
+/* Container */
+
+.section-container{
+    color: black;
+    font-size: 14px;
+    background-color: #cbefff;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.bar{
+    background-color: #9cc7ff;;
+    padding-top: 20px;
+}
+
+/* Hyperrefs */
+
+.web-link{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+ }
+
+ .web-link:hover{
+     font-weight: bold;
+ }
+
+ .pdf-link{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+ }
+
+ .pdf-link:hover{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+ }
+
+/* Text formatting */
+
+.text-block{
+    text-align: justify;
+}

@@ -18,29 +18,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS classes -->    
-    <!-- -->
+    
+    <link rel="stylesheet" href="Stylesheets/basicContainer.css">
+    
     <style>
-        body {
-            background-color: #d9f2ffd4;
-            font-family: 'Open Sans', sans-serif;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 10px;
-            display:flex;
-            flex-direction:column; 
-
-        }
-        
-        .section-container{
-            color: black;
-            font-size: 14px;
-            background-color: #b0e1f9;
-            padding-left: 100px;
-            padding-right: 100px;
-            padding-bottom: 10px;
-        }
-
-        .header-container{
+        .head-container{
             color: black;
             background-color: #ffffff;
             font-size: 14px;
@@ -53,8 +35,16 @@
             padding-bottom: 50px;
         }
 
-        .text-block{
-            text-align: justify;
+        .social-media-container{
+           display: flex;
+           flex-direction: column-reverse;
+           align-items: flex-start;
+           row-gap: 10px;
+        }
+
+        .profile-container{
+            display: flex;
+            justify-content: left;
         }
 
         .profile-pic{
@@ -65,17 +55,6 @@
             object-position: center right;
         }
 
-        .blackhole-pic{
-            height: 400pX;
-            object-fit: cover;
-            opacity: 0.8;
-        }
-
-        .profile-container{
-            display: flex;
-            justify-content: left;
-        }
-
         .social-media-container{
            display: flex;
            flex-direction: column-reverse;
@@ -83,16 +62,36 @@
            row-gap: 10px;
         }
 
-        .social-media-link{
-           font-size: 12px;
-           text-decoration: none;
-           color: black;
+        .header-bar{
+            display: flex;
+            justify-content: space-between;
+            background-color:#9cc7ff;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            align-items: center;
         }
 
-        .social-media-link:hover{
-            color: black;
-            font-size: 12px;
+        .nav-bar{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background-color:#9cc7ff;
+        }
+
+        .nav-button{
+            font-size: 14px;
+            color: #000;
+            text-decoration: none;
+            background-color: #9cc7ff;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        .nav-button:hover{
             font-weight: bold;
+            background-color: #9cc7ff;
         }
 
         .pdf-block{
@@ -106,19 +105,6 @@
             row-gap: 5px;
         }
 
-        .pdf-link{
-           font-size: 12px;
-           text-decoration: none;
-           color: black;
-        }
-
-        .pdf-link:hover{
-           font-size: 12px;
-           text-decoration: none;
-           color: black;
-           font-weight: bold;
-        }
-
         .project-container{
             padding-left: 10px;
         }
@@ -130,10 +116,11 @@
 <body>
 
     <!-- Title Profile-->
-    <div class="header-container">
+    
+    <div class="head-container">
         <div style="display:flex;flex-direction:row;align-items:flex-start">
             <div>
-                <h1>
+                <h1 style="background-color:#ffffff;">
                     Joachim Pomper, BSc <br>
                     <span style="font-size:20px">
                         Physics master student at University of Graz.
@@ -146,16 +133,16 @@
 
                     <div class="social-media-container">
                     
-                        <a class="social-media-link" href="https://twitter.com/JoachimPomper">
-                        <i class="fa fa-twitter" style="font-size:12px;color:black"> </i> Joachim Pomper </a>  
+                        <a class="web-link" href="https://twitter.com/JoachimPomper">
+                        <i class="fa fa-twitter" style="font-size:14px;color:black"> </i> &nbsp; Joachim Pomper </a>  
 
-                        <a class="social-media-link" href="https://github.com/HoneyBadger220497">
+                        <a class="web-link" href="https://github.com/HoneyBadger220497">
                         &nbsp;&nbsp;
-                        <i class="fa fa-github" style="font-size:12px;color:black"></i> HoneyBadger220497</a>   
+                        <i class="fa fa-github" style="font-size:14px;color:black"></i> &nbsp; HoneyBadger220497</a>   
 
-                        <a class="social-media-link" href="mailto:joachim.pomper@edu.uni-graz.at">
+                        <a class="web-link" href="mailto:joachim.pomper@edu.uni-graz.at">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                        <i class="fa fa-envelope" style="font-size:12px;color:black"></i> joachim.pomper@edu.uni-graz.at</a>
+                        <i class="fa fa-envelope" style="font-size:14px;color:black"></i> &nbsp; joachim.pomper@edu.uni-graz.at</a>
             
                     </div>
                 </div>
@@ -164,10 +151,23 @@
         </div>
     </div>
     
+    <div class="header-bar">
+        <span style="font-size:20px;font-weight:bold;">
+        </span>
+        <div class="nav-bar">
+            <a class="nav-button" href="#aboutme"> Research </a>
+            <a class="nav-button" href="#Conference"> Conferenz talks </a>
+            <a class="nav-button" href="#theses"> Theses </a>
+            <a class="nav-button" href="#Aboutme"> Student projects </a>
+        </div>
+    </div> 
     <!-- About me -->
-    <div class="section-container">
+    <div class="section-container" id="aboutme" style="padding-top:10px;">
+        <!--<span style="font-size:20px;font-weight:bold;">
+            About me
+        </span>-->
         <h2>
-            About me 
+            About me
         </h2>
         <div class="text-block">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
@@ -175,9 +175,10 @@
 
     </div>
 
-    <!-- Projects -->
+    <!-- Conference talks -->
+    <div class="bar"></div>
 
-    <div class="section-container">
+    <div class="section-container"  id="conference">
         <h2>
             Conference talks
         </h2>
@@ -189,7 +190,9 @@
         
     </div>
 
-    <div class="section-container">
+     <!-- Theses -->
+    <div class="bar"></div>
+    <div class="section-container" id="theses">
         <h2>
             Theses
         </h2>
@@ -211,9 +214,11 @@
         
     </div>
 
+    <!-- Student projects -->
+    <div class="bar"></div>
     <div class="section-container">
         <h2>
-            Student projects
+            Project works from my times as a master-student
         </h2>
         <div class="pdf-block">
             <a class="pdf-link" href="pdf/project_notes/A_simple_way_to_explain_phenomena_at_the_event_horizon_of_a_static_black_hole.pdf">A Simple way to explain phenomena at the event horizion of a static black hole</a>
