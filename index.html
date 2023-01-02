@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="Stylesheets/projectDisplays.css">
 
     <style>
+        
         .head-container{
             color: black;
             background-color: #ffffff;
@@ -32,9 +33,9 @@
             background-repeat: no-repeat;
             background-size: contain;
             padding-left: 100px;
-            padding-right: 100px;
+            padding-right: 100px;   
             padding-bottom: 50px;
-            padding-top: 50px   ;
+            padding-top: 20px   ;
         }
 
         .social-media-container{
@@ -57,21 +58,14 @@
             object-position: center right;
         }
 
-        .social-media-container{
-           display: flex;
-           flex-direction: column-reverse;
-           align-items: flex-start;
-           row-gap: 10px;
-        }
-
         .nav-bar{
             position: fixed;
             width: 100%;
             display: flex;
             justify-content: space-between;
             background-color:#9cc7ff;
-            padding-top: 3px;
-            padding-bottom: 3px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             align-items: center;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
             
@@ -80,6 +74,7 @@
         .nav-block{
             display: flex;
             justify-content: center;
+            align-items: center;    
             gap: 10px;
             background-color:#9cc7ff;
             padding-right: 50px;
@@ -115,6 +110,21 @@
             padding-left: 10px;
         }
         
+        @media only screen and (ma-width: 768px) {
+            .head-container{
+            color: black;
+            background-color: #ffffff;
+            font-size: 14px;
+            padding-left: 100px;
+            padding-right: 100px;   
+            padding-bottom: 50px;
+            padding-top: 20px   ;
+            }
+        .profile-container{
+            display: flex;
+            justify-content: center;
+            }
+        }
     </style>
 
 </head>
@@ -127,6 +137,7 @@
         <span style="font-size:20px;font-weight:bold;">
         </span>
         <div class="nav-block">
+            <a class="nav-button" href="#aboutme"> About me</a>
             <a class="nav-button" href="#aboutme"> Research </a>
             <a class="nav-button" href="#conference"> Conferenz talks </a>
             <a class="nav-button" href="#theses"> Theses </a>
@@ -136,8 +147,8 @@
 
     <div class="head-container">
         <div style="display:flex;flex-direction:row;align-items:flex-start">
-            <div style="background-color:#ffffff;"  >
-                <h1 >
+            <div   >
+                <h1 style="background-color:#ffffff;" >
                     Joachim Pomper, BSc <br>
                     <span style="font-size:20px">
                         Physics master student at University of Graz.
@@ -168,6 +179,14 @@
         </div>
     </div>
     
+    <div class="section-container" style="padding-top:20px;">
+        <div class="text-block">
+            <div style="font-weight:bold;padding-bottom: 5px;">Welcome to my webpage!
+            </div>
+            My name is  Joachim and I am currently a physics Master student at the Univerity of Graz, busy with finishing my masters thesis about a model of composite dark matter. I use this website to provide some information about me, my studies and future research interests, as well as to display a few projects I did in the past. Fell free to browse a little. If you are interested to get in touch don't hesitate to contact me.
+        </div>  
+    </div>
+
     <!-- About me -->
     <div class="section-container" id="aboutme" style="padding-top:10px;">
         <!--<span style="font-size:20px;font-weight:bold;">
