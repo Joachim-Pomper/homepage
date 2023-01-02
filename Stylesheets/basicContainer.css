@@ -3,11 +3,9 @@
 body {
     background-color: #d9f2ffd4;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
     display:flex;
     flex-direction:column; 
+    margin: 0;
 }
 
 /* Container */
@@ -18,7 +16,7 @@ body {
     background-color: #cbefff;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;   
     display:flex;
     flex-direction:column; 
 }
@@ -57,4 +55,5 @@ body {
 
 .text-block{
     text-align: justify;
+    padding-left: 15px;
 }

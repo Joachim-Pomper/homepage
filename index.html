@@ -27,13 +27,14 @@
             color: black;
             background-color: #ffffff;
             font-size: 14px;
-            background-image: url('Blackhole.svg');
+            background-image: url('Graphix/Blackhole.svg');
             background-position: top right;
             background-repeat: no-repeat;
             background-size: contain;
             padding-left: 100px;
             padding-right: 100px;
             padding-bottom: 50px;
+            padding-top: 50px   ;
         }
 
         .social-media-container{
@@ -50,8 +51,8 @@
 
         .profile-pic{
             border-radius: 50%;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             object-position: center right;
         }
@@ -63,22 +64,26 @@
            row-gap: 10px;
         }
 
-        .header-bar{
+        .nav-bar{
+            position: fixed;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             background-color:#9cc7ff;
-            padding-left: 100px;
-            padding-right: 100px;
             padding-top: 3px;
             padding-bottom: 3px;
             align-items: center;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+            
         }
 
-        .nav-bar{
+        .nav-block{
             display: flex;
             justify-content: center;
             gap: 10px;
             background-color:#9cc7ff;
+            padding-right: 50px;
+            overflow: hidden;
         }
 
         .nav-button{
@@ -117,11 +122,22 @@
 <body>
 
     <!-- Title Profile-->
-    
+
+    <div class="nav-bar">
+        <span style="font-size:20px;font-weight:bold;">
+        </span>
+        <div class="nav-block">
+            <a class="nav-button" href="#aboutme"> Research </a>
+            <a class="nav-button" href="#conference"> Conferenz talks </a>
+            <a class="nav-button" href="#theses"> Theses </a>
+            <a class="nav-button" href="#projects"> Student projects </a>
+        </div>
+    </div> 
+
     <div class="head-container">
         <div style="display:flex;flex-direction:row;align-items:flex-start">
-            <div>
-                <h1 style="background-color:#ffffff;">
+            <div style="background-color:#ffffff;"  >
+                <h1 >
                     Joachim Pomper, BSc <br>
                     <span style="font-size:20px">
                         Physics master student at University of Graz.
@@ -152,16 +168,6 @@
         </div>
     </div>
     
-    <div class="header-bar">
-        <span style="font-size:20px;font-weight:bold;">
-        </span>
-        <div class="nav-bar">
-            <a class="nav-button" href="#aboutme"> Research </a>
-            <a class="nav-button" href="#conference"> Conferenz talks </a>
-            <a class="nav-button" href="#theses"> Theses </a>
-            <a class="nav-button" href="#aboutme"> Student projects </a>
-        </div>
-    </div> 
     <!-- About me -->
     <div class="section-container" id="aboutme" style="padding-top:10px;">
         <!--<span style="font-size:20px;font-weight:bold;">
@@ -169,19 +175,24 @@
         </span>-->
         <h2>
             About me
+            <hr>
         </h2>
         <div class="text-block">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+            I am a Masters student at the University of Graz. The focus of my master studies was on Quantum Field theory and Gravity. Currently I am working on my masters thesis, where I study a class of QCD-like gauge theories in order to modell a SM-extension of strongly interacting dark matter. During this project I came in touch with cosmology and astroparticle physics. My future research interest however lies at the intersection of QFT and Gravity, with focus on physics beyond perturbation theory. Especially when it comes to quantum gauge theories there is a lot of non-perturbative aspects we yet do not fully understannd. To only name a few we have the Gribov ambiguity, extended field configurations or the phenomena of Confinement. 
+            <br>
+            Lattice QFT appears to me to be a tool that might help us make severe progress in the understanding of these topics. But there also exists other non-perturvative tools like Dyson Schwinger Equations,the Functional Renormalization  Group approach or Holography. While I would like to learn more about each of them, especially the last one, using the structural similarities between Gravity and QFT, is of great interest to me. 
+            <br>
+            I also always had a fable for Quantum Field Theory in curved spacetime. Recently the algebraic apporach caught my attention. Most of the work done in this area however is of perturbative nature. In my opinion, algebraic quantum field theory pottenially provides a framework to deal with physical issues, for example the notion of particles or antimatter in a curved spacetime background, while simultanious offering a mathmathical rigorous description of QFT. Of course with the caveat of beeing a semi-classical description, not taking into account quantum-gravity effects. The question if such semi-classical descriptions are valid at all in order to adress for example the information-loss-paradox of Black Holes remains an open question of research. One to whose answer I would be glad to contribute to in the near future.
+                 
         </div>
 
     </div>
 
     <!-- Conference talks -->
-    <div class="bar"></div>
-
     <div class="section-container"  id="conference">
         <h2>
             Conference talks
+            <hr>
         </h2>
         <div class="project-container">
             <div class="project-info">
@@ -226,10 +237,10 @@
     </div>
 
      <!-- Theses -->
-    <div class="bar"></div>
     <div class="section-container" id="theses">
         <h2>
             Theses
+            <hr>
         </h2>
         <div class="project-container">
             <div class="project-info">
@@ -269,10 +280,10 @@
     </div>
 
     <!-- Student projects -->
-    <div class="bar"></div>
-    <div class="section-container">
+    <div class="section-container" id="projects">
         <h2>
-            Project works from my times as a master-student
+            Student projects
+            <hr>
         </h2>
         <div style="padding-top:15px;"></div>
         <div class="project-container">
@@ -342,7 +353,8 @@
 
     <div class="section-container">
         <h2>
-            Master Seminar presentations
+            Student talks
+            <hr>
         </h2>
         <div class="project-container">
             <div class="project-info">
