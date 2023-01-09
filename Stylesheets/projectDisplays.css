@@ -1,10 +1,28 @@
+.abstract-block{
+    text-align: justify;
+    padding-left: 15px;
+    padding-bottom  : 10px ;
+    padding-top: 5px ;
+    color: rgb(27, 27, 27);
+}
+
+.project-title{
+    font-size: 18;
+    font-weight: bold;
+}
+
+.project-bottom-line{
+    display: flex; 
+    justify-content: space-between
+}
+
+.project-container{
+    padding-bottom: 30px;
+}
+
 /* general */
 .project-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-bottom: 30px;
-    padding-left: 15px;
 }
 
 .project-info{

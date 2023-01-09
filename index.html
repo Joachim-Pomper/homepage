@@ -29,13 +29,20 @@
             background-color: #ffffff;
             font-size: 14px;
             background-image: url('Graphix/Blackhole.svg');
-            background-position: top right;
+            background-position: 86% 10%;
             background-repeat: no-repeat;
             background-size: contain;
-            padding-left: 100px;
-            padding-right: 100px;   
+            padding-left: 8%;
+            padding-right: 8%;   
             padding-bottom: 50px;
-            padding-top: 20px   ;
+            padding-top: 20px;
+            min-width: 640px;
+        }
+
+        .profile-container{
+            display: flex;
+            justify-content: left;
+            min-width: 400px;
         }
 
         .social-media-container{
@@ -43,11 +50,6 @@
            flex-direction: column-reverse;
            align-items: flex-start;
            row-gap: 10px;
-        }
-
-        .profile-container{
-            display: flex;
-            justify-content: left;
         }
 
         .profile-pic{
@@ -138,8 +140,8 @@
         </span>
         <div class="nav-block">
             <a class="nav-button" href="#aboutme"> About me</a>
-            <a class="nav-button" href="#aboutme"> Research </a>
-            <a class="nav-button" href="#conference"> Conferenz talks </a>
+            <a class="nav-button" href="#research"> My research </a>
+            <a class="nav-button" href="#talks"> Talks </a>
             <a class="nav-button" href="#theses"> Theses </a>
             <a class="nav-button" href="#projects"> Student projects </a>
         </div>
@@ -147,11 +149,12 @@
 
     <div class="head-container">
         <div style="display:flex;flex-direction:row;align-items:flex-start">
-            <div   >
-                <h1 style="background-color:#ffffff;" >
+            <div style="min-width: 500px;">
+                <h1      >
                     Joachim Pomper, BSc <br>
                     <span style="font-size:20px">
-                        Physics master student at University of Graz.
+                        Physics master student at 
+                        University of Graz.
                     </span>
                 </h1>
             
@@ -161,14 +164,14 @@
 
                     <div class="social-media-container">
                     
-                        <a class="web-link" href="https://twitter.com/JoachimPomper">
+                        <a class="social-link" href="https://twitter.com/JoachimPomper">
                         <i class="fa fa-twitter" style="font-size:14px;color:black"> </i> &nbsp; Joachim Pomper </a>  
 
-                        <a class="web-link" href="https://github.com/HoneyBadger220497">
+                        <a class="social-link" href="https://github.com/HoneyBadger220497">
                         &nbsp;&nbsp;
                         <i class="fa fa-github" style="font-size:14px;color:black"></i> &nbsp; HoneyBadger220497</a>   
 
-                        <a class="web-link" href="mailto:joachim.pomper@edu.uni-graz.at">
+                        <a class="social-link" href="mailto:joachim.pomper@edu.uni-graz.at">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
                         <i class="fa fa-envelope" style="font-size:14px;color:black"></i> &nbsp; joachim.pomper@edu.uni-graz.at</a>
             
@@ -183,76 +186,141 @@
         <div class="text-block">
             <div style="font-weight:bold;padding-bottom: 5px;">Welcome to my webpage!
             </div>
-            My name is  Joachim and I am currently a physics Master student at the Univerity of Graz, busy with finishing my masters thesis about a model of composite dark matter. I use this website to provide some information about me, my studies and future research interests, as well as to display a few projects I did in the past. Fell free to browse a little. If you are interested to get in touch don't hesitate to contact me.
+            My name is  Joachim and I am currently a physics Master student at the Univerity of Graz, busy with finishing my masters thesis about a class of composite dark matter models. I use this website to provide some information about me, my studies and future research interests, as well as to display a few projects I did in the past. Fell free to browse a little. If you are interested in getting in touch don't hesitate to contact me.
         </div>  
     </div>
 
     <!-- About me -->
-    <div class="section-container" id="aboutme" style="padding-top:10px;">
-        <!--<span style="font-size:20px;font-weight:bold;">
-            About me
-        </span>-->
+    <div class="section-container" id="aboutme">
         <h2>
             About me
             <hr>
         </h2>
         <div class="text-block">
-            I am a Masters student at the University of Graz. The focus of my master studies was on Quantum Field theory and Gravity. Currently I am working on my masters thesis, where I study a class of QCD-like gauge theories in order to modell a SM-extension of strongly interacting dark matter. During this project I came in touch with cosmology and astroparticle physics. My future research interest however lies at the intersection of QFT and Gravity, with focus on physics beyond perturbation theory. Especially when it comes to quantum gauge theories there is a lot of non-perturbative aspects we yet do not fully understannd. To only name a few we have the Gribov ambiguity, extended field configurations or the phenomena of Confinement. 
-            <br>
-            Lattice QFT appears to me to be a tool that might help us make severe progress in the understanding of these topics. But there also exists other non-perturvative tools like Dyson Schwinger Equations,the Functional Renormalization  Group approach or Holography. While I would like to learn more about each of them, especially the last one, using the structural similarities between Gravity and QFT, is of great interest to me. 
-            <br>
-            I also always had a fable for Quantum Field Theory in curved spacetime. Recently the algebraic apporach caught my attention. Most of the work done in this area however is of perturbative nature. In my opinion, algebraic quantum field theory pottenially provides a framework to deal with physical issues, for example the notion of particles or antimatter in a curved spacetime background, while simultanious offering a mathmathical rigorous description of QFT. Of course with the caveat of beeing a semi-classical description, not taking into account quantum-gravity effects. The question if such semi-classical descriptions are valid at all in order to adress for example the information-loss-paradox of Black Holes remains an open question of research. One to whose answer I would be glad to contribute to in the near future.
+            After I finished school and my civil service in 2016 I enrolled at the <a class="text-link" href="#"> Technical University Graz </a>
+            in order to study physics, equipped with a "brief history of time" and the naive to goal unify quantum theory and gravity. What a fool I was. A bit overwelmed with all the interesting topics, I started to study mechanics, thermodynamics,  electromagnetism, fluidmechanics, special relatitivity, solid state physics and quantum mechanics both theoreticaly and experimentally. Unfortunatly general relativity was not a part of the bachelors programm. However I had great fun studying undergraduate physics and unexpectedly discovered my fascination with abstract maths. During my physics bachelor I picked up several classes in the maths bachelor in order to deepen my knowledge. At the end of my physics bachelor 2019, I worked for a year parttime for a company developing automation and control systems for renewable energy grids. There I was programming a simulation for heating grids, including thermal buffer storages and heat exchangers, in order to test their software. During that time I took additional courses in maths on measure theory, numerics and functional analysis. 
+        </div>
+        <div class="text-block">
+            In 2020 I started a masters program at the <a class="text-link" href="#"> University of Graz </a> with focus on quantum field theory and gravity. My first gravity course was rather disappointing and I turned more towards quantum theory.
+            Since my third semester at the university I was teaching assistent for various subjects at the university, but my favorite postion was in the summmer semester 2021. I was organising lecture material for Professor Stefan Kurz, from the university of Darmstadt, for a course on differential forms in Electromagnetism. Equipped with two books, an online lecture on Youtube and my newly sparked interesting in geometry I decided to take on General Relativity again on my own in the summer break of 2021. For my master thesis however I took a very different topic. With studying relativity I came in touch with cosmology and dark matter. Since most of my Study time I focused on the theoretical aspects physics and maths I figured I could try to something mroe phenomenological. Also I wanted to learn more about strongly interacting gauge-theories. As it turned out I ended up learning a lot about anomalous and spontanous symmetry breaking, homology, representation theory and effective field theories - so I guess I am naturally drawn to doing theortical physics and abstract maths. 
+            I took a little winter break to travel to Australia, where I was invited to present some of the results of my mastersthesis at DSU 2022. Now I am writing up my thesis, while looking for a phd somewhere at the intersection between Quantum Field Theory and Gravity.          
+        </div>
+        <h3 style="text-align:center;padding-bottom:20px;">
+            Research interests
+        </h3>
+        <div class="text-block">
+             My future research interests lie at the intersection of QFT and Gravity, with focus on physics beyond perturbation theory.    Especially when it comes to quantum gauge theories there is a lot of non-perturbative aspects we yet do not fully understand. To only name a few we have the Gribov ambiguity, extended field configurations or the phenomena of Confinement. 
+            Lattice QFT appears to me to be a tool that might help us make severe progress in the understanding of these topics. But there also exists other non-perturvative tools like Dyson Schwinger Equations, the Functional Renormalization  Group approach or Holography. While I would like to learn more about each of them, especially the last one, using the structural similarities between Gravity and QFT, is of great interest to me. 
+        </div>    
+        <div class="text-block">
+            I also always had a fable for Quantum Field Theory in curved spacetime. Recently the algebraic apporach caught my attention. Most of the work done in this area however is of perturbative nature. In my opinion, algebraic quantum field theory potenially provides a framework to deal with physical issues, for example the notion of particles or antimatter in a curved spacetime background, while simultanious offering a mathmathical rigorous description of QFT. Of course with the caveat of beeing a semi-classical description, not taking into account quantum-gravity effects. The question if such semi-classical descriptions are valid at all in order to adress for example the information-loss-paradox of Black Holes remains an open question of research. One to whose answer I would be glad to contribute to in the near future.
                  
         </div>
 
     </div>
 
-    <!-- Conference talks -->
-    <div class="section-container"  id="conference">
+    <div class="section-container" id="research" >
         <h2>
-            Conference talks
+            My current research project
             <hr>
         </h2>
-        <div class="project-container">
-            <div class="project-info">
-                <span class="project-specbox">
-                    DSU 2022 <br> Sydney
-                </span> 
-                <span class="project-title-box">
-                    Title: 
-                </span>
-                <span class="project-title" >
-                    Composite dark matter from non-abelian gauge theories with real representations.
-                </span>
+        <div class="text-block">
+            One of the most prominent problems of modern physics is the mystery of Dark matter. Despite ample observational evidence from astrophysics, there is yet no commonly accepted explanation on the level of particle physics. Several models already have been proposed among which so called WIMP dark matter has been investigated most intensively. In the early 2000 <a class="text-link" href="http://arxiv.org/abs/astro-ph/9909386"> Spergel and Steinhardt </a> proposed that sufficiently strong self interactions among dark matter particles might resolve some structure formation puzzles like the so called Cusp vs. Core problem. Recent works by   
+        </div>    
+        <div class="text-block">
+            In my Masters thesis I investigate a class of models for composite dark matter based on a strongly interacting gauge model. In these szenarios dark matter is made up of bound states (dark pions) of some fermions (dark quarks). Due to the underlying new strong interaction sufficiently large self interaction between the dark matter particles are introduced. Futhermore the stability of the dark matter can be explained by an accidental flavor symmetry.  
+        </div>    
+        <div class="text-block">
+            My model focuses on fermions that are charged under a real representation, leaving the specific choice of gauge group and representation an open parameter of the theory. As it turns out the reality condition is strong enough to qualitativly restrict all the low energy properties of the theory, while the qualitative features manifest in the low energy effective constants, dependent on the choice of gauge group and representation. The behavor differs from the complex representation of QCD and SU(N) theories and resembles more a SO(N)-like type of theory.        
+            The relevant particles my model describes are fermion-fermion bound states, called dark mesons. The lightest stable states are the pseudo-scalar PNGBs, called dark pions, of a spomtanous symmetry breaking szenario. Further the lightest vector meson states (rho, omega) and a pseudo-scalar flavor-singlet meson (eta) related to the chiral anomaly are included. 
+        </div>    
+        <div class="text-block">
+            If one restricts to a model with 2 fermions one encounters a topological obstruction that leads to the breakdown of <a class="text-link" href="#"> Witten's geometrical construction </a> of the socalled "Anomalous" or "topological" terms in the effective field theory. We had to go back to the original approach of <a class="text-link" href="#"> Wess and Zumino </a>, which directly related the UV-properties with the IR-properties by investigation of anomalous Ward identities in order to construct these terms. These terms incorporate a 3->2 interaction of the pions which contributes (and even may domintate) the freez out Szenario of dark matter. This socalled <a class="text-link" href="#"> SIMP </a> mechanism was proposed and investigated by the group around <a class="text-link" href="#"> Yonit Hochberg </a>. 
+        </div>    
+        <div class="text-block">
+            The model may be viewed as standard modell extension and can be coupled to the SM via a Portal mediator. We investigate the case of a massive dark-photon meditor, kinetically mixing with standard model hypercharge. After the introduction of the mediator dark matter annihilation into the standard model compete with the 3->2 process in the freezout. However another decay channel opens with anomalous vertex of the dark eta particle. At the last step of the project we investigate the freeze out szenario in view of these 3 channels.    
+        </div>
+
+    </div>
+    
+    <!-- Conference talks -->
+    <div class="section-container"  id="talks">
+        <h2>
+            Talks
+            <hr>
+        </h2>
+        <h3 style="text-align:center;padding-bottom:20px;">
+            Conferences
+        </h3>
+        <div class="project-container"> 
+            <div class ="project-title">
+                Composite dark matter from non-abelian gauge theories with real representations.
             </div>
-            <div class="project-refs">
-                <a href="talks/DSU_2022/DSU2022_CompositeDarkMatterFromNonAbelianGaugeTheoriesWithRealRepresentations.pdf">
-                    <div class="thumbnail" style="background-image: url('talks/DSU_2022/thumbnail.PNG')">
-                    </div>
-                </a>
+            <div>
+                DSU 2022, Dark Side of the Universe Conference in Sydney [Parallel sessions talk]
+            </div>
+            <div class="abstract-block">
+                We present a class of composite dark matter models with matter fields in a real representation under the non-abelian gauge group. As an exemplary theory we present a Sp(4) gauge theory, with fermions transforming in the antisymmetric representation. We analyze the structure of these theories in the UV and discuss the building blocks of the low energy effective theory in the IR, describing the dynamics of the cold dark matter. We put special focus on the construction of topological terms responsible for 3→2 cannibalization processes within the dark sector and on the physics of the pseudo scalar singlet related to the axial anomaly. We show that both these aspects significantly affect the freeze out calculation of the dark matter relic abundance and thus are relevant for investigations of the parameter space of such theories.
+            </div>
+            <div class="project-bottom-line">
+                <div> 05.12.2022</div>
+                <div>
+                    <a class="pdf-button" href="talks/DSU_2022/DSU2022_CompositeDarkMatterFromNonAbelianGaugeTheoriesWithRealRepresentations.pdf">
+                        DSU 2022  
+                    </a>
+                    <a class="pdf-button" href="talks/DSU_2022/DSU2022_CompositeDarkMatterFromNonAbelianGaugeTheoriesWithRealRepresentations.pdf">
+                        Slides.pdf  
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="project-container">
-            <div class="project-info">
-                <span class="project-specbox">
-                    ÖPG 2022 <br> Leoben
-                </span> 
-                <span class="project-title-box">
-                    Title: 
-                </span>
-                <span class="project-title">
-                    Low energy effective description of Sp(4) theory with matter in non fundamental representations.
-                </span>
+        <div class="project-container"> 
+            <div class ="project-title">
+                Low energy effective description of dark Sp(4) theory with matter in non-fundamental representation.
             </div>
-            <div class="project-refs">
-                <a href="talks/ÖPG_2022/OEPG2022_LowEnergyEffectiveDescriptionOfSP4TheoryWithMatterInNonFundamentalRepresentations.pdf">
-                    <div class="thumbnail" style="background-image: url('talks/ÖPG_2022/thumbnail.PNG')">
-                    </div>
-                </a>
+            <div>
+                ÖPG 2022, The 71st Annual Meeting of the Austrian Physical Society in Leoben [Parallel sessions talk]
+            </div>
+            <div class="abstract-block">
+                Dark matter makes up the majority of the mass in the universe. Despite ample observational evidence, dark matter has yet no explanation in particle physics. This drives construction of new particle physics theories which can lead to interesting explanations for the nature of dark matter. We present a new particle physics model where dark matter is a composite object much like pions in the Standard Model. Our model is based on a new gauge group -- Sp(4), with matter in antisymmetric representation rather than fundamental representation. We sketch the building blocks of this theory and explain how such theories are different than the usually encountered constructions in particle physics.
+            </div>
+            <div class="project-bottom-line">
+                <div> 09.08.2022</div>
+                <div>
+                    <a class="pdf-button" href="https://oepg2022.unileoben.ac.at/">
+                        ÖPG 2022  
+                    </a>
+                    <a class="pdf-button" href="talks/ÖPG_2022/OEPG2022_LowEnergyEffectiveDescriptionOfSP4TheoryWithMatterInNonFundamentalRepresentations.pdf">
+                        Slides.pdf  
+                    </a>
+                </div>
             </div>
         </div>
-        
+
+        <h3 style="text-align:center;padding-bottom:20px;">
+            Student seminars
+        </h3>
+        <div class="project-container"> 
+            <div class ="project-title">
+                An introduction to dark matter phenomenology.
+            </div>
+            <div>
+                Master seminar [University of Graz]
+            </div>
+            <div class="abstract-block">
+                Dark matter makes up the majority of the mass in the universe. Despite ample observational evidence, dark matter has yet no explanation in particle physics. This drives construction of new particle physics theories which can lead to interesting explanations for the nature of dark matter. We present a new particle physics model where dark matter is a composite object much like pions in the Standard Model. Our model is based on a new gauge group -- Sp(4), with matter in antisymmetric representation rather than fundamental representation. We sketch the building blocks of this theory and explain how such theories are different than the usually encountered constructions in particle physics.
+            </div>
+            <div class="project-bottom-line">
+                <div> 01.02.2022</div>
+                <div>
+                    <a class="pdf-button" href="student_projects/MasterSeminar/DMPheno/MasterSeminar_Introduction_to_dak_matter_phenomenology.pdf">
+                        Slides.pdf  
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
      <!-- Theses -->
@@ -261,141 +329,110 @@
             Theses
             <hr>
         </h2>
-        <div class="project-container">
-            <div class="project-info">
-                <span class="project-specbox">
-                    Bachelor <br> thesis
-                </span> 
-                <span class="project-title-box">
-                    Title: 
-                </span>
-                <span class="project-title">
-                    Analytische Berechnung der spontanen Magnetisierung von isotropen homogenen Ising Ferromagneten unter der Verwendung von Graßmann Zahlen 
-                </span>
+        <div class="project-container"> 
+            <div class ="project-title">
+                Analytische Berechnung der spontanen Magnetisierung von isotropen homogenen Ising Ferromagneten unter der Verwendung von Graßmann Zahlen
             </div>
-            <div class="project-refs">
-                <a class="pdf-link" href="pdf/theses/Bachelor/BachelorThesis.pdf">Thesis</a>
-                <a class="pdf-link" href="pdf/theses/Bachelor/BachelorPresentation.pdf">Presentation</a>
+            <div>
+                Bachelor thesis [In German]
+            </div>
+            <div class="abstract-block">
+                Ziel dieser Arbeit ist die Angabe einer möglichst eleganten Herleitung für die exakte Formel der spontanen Magnetisierung des 2d Ising-Modells in Abhängigkeit von der Temperatur, welche erstmals von Lars Onsager aufgestellt wurde. Dies wird bewerkstelligt indem das graphisch-kombinatorische Problem, welches bei der Beschreibung der Zustandssumme und der Magnetisierung auftritt, mithilfe von Graßmann-Zahlen in ein handhabbares algebraisches Problem übersetzt wird. Mathematische Theoreme wie der starke Szegö Grenzwertsatz dienen zudem als praktische Werkzeuge um Grenzübergänge im Thermodynamischen Limes elegant zu behandeln. Die Arbeit beschränkt sich dabei auf ein homogenes isotropes zweidimensionales Ising-Gitter mit periodischen Randbedingungen. Die Ideen zu dieser Herleitung gehen auf die Arbeiten von Stuart Samuel, Elliot W.Montroll, Renfrey B. Potts und John C. Ward zurück.
+            </div>  
+            <div class="project-bottom-line">
+                <div> 20.09.2020</div>
+                <div>
+                    <a class="pdf-button" href="theses/Bachelor/BachelorThesis.pdf">
+                        Thesis.pdf  
+                    </a>
+                    <a class="pdf-button" href="theses/Bachelor/BachelorPresentation.pdf">
+                        Slides.pdf  
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="project-container">
-            <div class="project-info">
-                <span class="project-specbox">
-                    Master <br> thesis
-                </span> 
-                <span class="project-title-box">
-                    Title: 
-                </span>
-                <span class="project-title">
-                    Low energy effective description of strongly interaction dark matter from QCD like gauge theories with fermions in real representations.
-                </span>
-            </div>
-            <div class="project-refs">
-                <a class="pdf-link" href="#aboutme">WIP</a>
-            </div>
-        </div>
-        
     </div>
 
+    
     <!-- Student projects -->
     <div class="section-container" id="projects">
         <h2>
             Student projects
             <hr>
         </h2>
-        <div style="padding-top:15px;"></div>
-        <div class="project-container">
-            <div class="project-info">
-                <span class="project-specbox" style="min-width:160px;">
-                    <a href="projects/UniversityCourseProjects/Blackhole/Presentation_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">
-                        <div class="thumbnail" style="background-image: url('projects/UniversityCourseProjects/Blackhole/thumbnail.jfif')">
-                        </div>
-                    </a>
-                </span> 
-                <span class="project-title-box">
-                    Title: 
-                </span>
-                <span class="project-title">
-                    A simple way to explain phenomena at the event horizion of a static black hole. 
-                </span>
+        <div class="project-container"> 
+            <div class ="project-title">
+                Particle creation in an expanding universe. 
             </div>
-            <div class="project-refs">
-                <a class="pdf-link" href="projects/UniversityCourseProjects/Blackhole/Notes_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">Notes</a>
-                <a class="pdf-link" href="projects/UniversityCourseProjects/Blackhole/Presentation_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">Presentation</a>
+            <div>
+                Student project for a course by Reinhard Alkofer
+            </div>
+            <div class="abstract-block">
+                In this project we consider a real scalar quantum field coupled in an expanding spatially-flat FLRW universe. The case of minimal and conformal coupling to the background metric are considered and for the FLRW scaling factor we picked the non-physical choice of a Sauter pulse. Due to the lack of an appropriate notion of time-translation symmetry, energy conservation is violated and one typically expects particle creation. The problem is analytically solvable in terms of hypergeometric functions and thus allows a nice discussion of the rate and amount of produced particles in terms of their mass, the expansion rate and the total expansion. 
+            </div>
+            <div class="project-bottom-line">
+                <div> 30.01.2022</div>
+                <div>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/ParticleCreation/Notes_ParticleCreationInAnExpandingUniverse.pdf">
+                        Notes.pdf  
+                    </a>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/ParticleCreation/Presentation_ParticleCreationInAnExpandingUniverse.pdf">
+                        Slides.pdf      
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="project-container">
-            <div class="project-info">
-                <span class="project-specbox" style="min-width:160px;">
-                    <a href="projects/UniversityCourseProjects/ParticleCreation/Notes_ParticleCreationInAnExpandingUniverse.pdf">
-                        <div class="thumbnail" style="background-image: url('projects/UniversityCourseProjects/ParticleCreation/thumbnail.PNG')">
-                        </div>
-                    </a>
-                </span> 
-                <span class="project-title-box">
-                    Title: 
-                </span>
-                <span class="project-title">
-                    Particle creation in an expanding universe. 
-                </span>
+        <div class="project-container"> 
+            <div class ="project-title">
+                A simple way to explain phenomena at the event horizon of a static black hole.
             </div>
-            <div class="project-refs">
-                <a class="pdf-link" href="projects/UniversityCourseProjects/ParticleCreation/Notes_ParticleCreationInAnExpandingUniverse.pdf">Notes</a>
-                <a class="pdf-link" href="projects/UniversityCourseProjects/ParticleCreation/Presentation_ParticleCreationInAnExpandingUniverse.pdf">Presentation</a>
+            <div>
+                Student project for a course by Reinhard Alkofer
+            </div>
+            <div class="abstract-block">
+                In this project we treat a thought-experiment of an astronaut near the event Horizon of a static Black Hole, who drops a Probe into the Black Hole and measures the light signal transmitted by the Probe. We review the properties of the Schwarzschild spacetime in different charts, explain the disadvantages and ambiguities of the Schwarzschild chart and introduce non-pathological coordinates such as lightcone coordinates and Kruskal-Szekeres coordinates. The redshifts, null-geodesics, horizion as well as the introduction of a proper time-orientation on the spacetime are discussed. The apparent paradox, that the probe drops into the black hole after finite time without the astronaut ever observing, it is neatly explained and visualized by the use of these new coordinates in a Penrose diagram.    
+            </div>
+            <div class="project-bottom-line">
+                <div> 08.12.2021</div>
+                <div>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/Blackhole/Notes_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">
+                        Notes.pdf  
+                    </a>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/Blackhole/Presentation_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">
+                        Slides.pdf      
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="project-container">
-            <div class="project-info">
-                <span class="project-specbox" style="min-width:160px;">
-                    <a href="projects/UniversityCourseProjects/FRG/Notes_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">
-                        <div class="thumbnail" style="background-image: url('projects/UniversityCourseProjects/FRG/thumbnail.PNG')">
-                        </div>
-                    </a>
-                </span> 
-                <span class="project-title-box">
-                    Title: 
-                </span>
-                <span class="project-title">
-                    Functional Renormalization Group approach for interaction Dirac fermions 
-                </span>
+        <div class="project-container"> 
+            <div class ="project-title">
+                Functional Renormalization Group approach for interaction Dirac fermions.
             </div>
-            <div class="project-refs">
-                <a class="pdf-link" href="projects/UniversityCourseProjects/FRG/Notes_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">Notes</a>
-                <a class="pdf-link" href="projects/UniversityCourseProjects/FRG/Presentation_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">Presentation</a>
+            <div>
+                Student project for a course by Reinhard Alkofer
+            </div>
+            <div class="abstract-block">
+                In this project we derive the fermionic version of the Wetterich equation for the functional renormalization group flow and apply it to the Gross-Neveu model with N fermion flavors.  A simplistic ansatz for the quantum effective action allows for an analytic solution of the system. The flow equation and the running of couplings are calculated and discussed.
+            </div>
+            <div class="project-bottom-line">
+                <div> 14.05.2021</div>
+                <div>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/FRG/Notes_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">
+                        Notes.pdf  
+                    </a>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/FRG/Presentation_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">
+                        Slides.pdf      
+                    </a>
+                </div>
             </div>
         </div>
         
     </div>
 
     <div class="section-container">
-        <h2>
-            Student talks
-            <hr>
-        </h2>
-        <div class="project-container">
-            <div class="project-info">
-                <span class="project-specbox">
-                    Master <br> seminar
-                </span> 
-                <span class="project-title-box">
-                    Title: 
-                </span>
-                <span class="project-title">
-                    A students introduction to dark matter phenomenology.
-                </span>
-            </div>
-            <div class="project-refs">
-                <a href="projects/MasterSeminar/DMPheno/MasterSeminar_Introduction_to_dak_matter_phenomenology.pdf">
-                    <div class="thumbnail" style="background-image: url('projects/MasterSeminar/DMPheno/thumbnail.PNG')">
-                    </div>
-                </a>
-            </div>
-        </div>
-        
-    </div>
 
 </body>
 

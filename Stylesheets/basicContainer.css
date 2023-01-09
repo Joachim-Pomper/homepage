@@ -14,9 +14,10 @@ body {
     color: black;
     font-size: 14px;
     background-color: #cbefff;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 20px;   
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 20px;
+    padding-top: 15px;   
     display:flex;
     flex-direction:column; 
 }
@@ -28,32 +29,50 @@ body {
 
 /* Hyperrefs */
 
-.web-link{
+.social-link{
     font-size: 12px;
     color: black;
     text-decoration: none;
  }
 
- .web-link:hover{
+ .social-link:hover{
      font-weight: bold;
  }
 
- .pdf-link{
-    font-size: 12px;
-    text-decoration: none;
+ .text-link{
+    text-decoration:none;
+    font-style: italic;
     color: black;
  }
 
- .pdf-link:hover{
-    font-size: 12px;
+ .text-link:hover{
+    color: rgb(71, 71, 71);
+ }
+
+ .pdf-button{
+    font-size: 14px;
     text-decoration: none;
-    color: black;
+    color: black;   
+    /*border-radius: 25px;
+    border: 2px solid;
+    border-color: #9cc7ff   ;*/
+    padding-left: 5px;      
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 5px;
+ }
+
+ .pdf-button:hover{
+    border-color: #5b96e4;
     font-weight: bold;
  }
+
 
 /* Text formatting */
 
 .text-block{
     text-align: justify;
     padding-left: 15px;
+    padding-bottom: 10px;
 }
