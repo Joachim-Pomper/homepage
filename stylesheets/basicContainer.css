@@ -34,7 +34,7 @@ body {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     background-color:#9cc7ff;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -44,12 +44,23 @@ body {
 
 .nav-block{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;    
     gap: 3%;
     background-color:#9cc7ff;
     padding-right: 5%;
     overflow: hidden;
+    width: 480px;
+}
+
+.nav-button{
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    background-color: #9cc7ff;
+    padding-left: 2px;
+    padding-right: 2px;
+    
 }
 
 @media screen and (max-width: 480px){
@@ -74,16 +85,16 @@ body {
         background-color:#9cc7ff;
         overflow: hidden;
     }
-}
 
-.nav-button{
-    font-size: 14px;
-    color: #000;
-    text-decoration: none;
-    background-color: #9cc7ff;
-    padding-left: 2px;
-    padding-right: 2px;
-    text-align: center;
+    .nav-button{
+        font-size: 14px;
+        color: #000;
+        text-decoration: none;
+        background-color: #9cc7ff;
+        padding-left: 2px;
+        padding-right: 2px;
+        text-align: center;
+    }
 }
 
 .nav-button:hover{
