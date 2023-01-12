@@ -34,7 +34,7 @@ body {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     background-color:#9cc7ff;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -46,10 +46,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;    
-    gap: 10px;
+    gap: 3%;
     background-color:#9cc7ff;
     padding-right: 5%;
     overflow: hidden;
+}
+
+@media screen and (max-width: 480px){
+            
+    .nav-bar{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        background-color:#9cc7ff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
+    }
+
+    .nav-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        gap: 3%;
+        background-color:#9cc7ff;
+        overflow: hidden;
+    }
 }
 
 .nav-button{
@@ -59,6 +83,7 @@ body {
     background-color: #9cc7ff;
     padding-left: 2px;
     padding-right: 2px;
+    text-align: center;
 }
 
 .nav-button:hover{
