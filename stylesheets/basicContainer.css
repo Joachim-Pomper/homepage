@@ -1,5 +1,7 @@
 /* Body and background */
 
+/*  #cbefff bright
+    #9cc7ff dark*/
 body {
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
@@ -12,8 +14,8 @@ body {
 
 .section-container{
     color: black;
-    font-size: 14px;
-    background-color: #cbefff;
+    font-size: 16px;
+    background-color: #ffffff;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 20px;
@@ -144,10 +146,10 @@ body {
  }
 
  .social-button{
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     color: black;   
-    background-color: #9cc7ff   ;
+    background-color: #ffffff  ;
     border-radius: 8px;
     border: 2px solid;
     border-color: #000000 ; 
@@ -170,4 +172,12 @@ body {
     text-align: justify;
     padding-left: 15px;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 480px){
+    
+.text-block{
+    text-align: justify;
+    padding-bottom: 10px;
+}
 }
