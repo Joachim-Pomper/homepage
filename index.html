@@ -21,6 +21,7 @@
     
     <link rel="stylesheet" href="Stylesheets/basicContainer.css">
     <link rel="stylesheet" href="Stylesheets/projectDisplays.css">
+    <link rel="stylesheet" href="Stylesheets/researchSection.css">
 
     <style>
         
@@ -35,20 +36,19 @@
             padding-left: 8%;
             padding-right: 8%;   
             padding-bottom: 50px;
-            padding-top: 10px;
-            min-width: 640px;
+            padding-top: 10px;  
         }
 
         .profile-container{
             display: flex;
-            justify-content: left;
-            min-width: 400px;
+            justify-content: flex-start;
         }
 
         .social-media-container{
            display: flex;
-           flex-direction: column-reverse;
-           align-items: flex-start;
+           flex-direction: row;
+           align-items: center;
+           justify-content: center;
            row-gap: 10px;
         }
 
@@ -68,12 +68,6 @@
             padding-bottom: 20px;
         }
 
-        .research-pic{
-            object-fit: contain;
-            object-position: center center  ;
-            padding-left: 15px;
-        }
-
         .link-list{
             padding-left: 10px;
             padding-top: 10px;
@@ -88,26 +82,50 @@
         .project-container{
             padding-left: 10px;
         }
-        
-        .research-container{
+
+        .social-box{
             display: flex;
-            justify-content: space-between
-        }
-        @media only screen and (ma-width: 768px) {
+            align-items: center;
+            flex-direction: column;
+            gap:3px;   
+            width: 250px;
+            }
+
+        @media screen and (max-width: 1000px){
             .head-container{
             color: black;
             background-color: #ffffff;
-            font-size: 14px;
+            background-image: none;
+            font-size: 12px;
             padding-left: 100px;
             padding-right: 100px;   
             padding-bottom: 50px;
-            padding-top: 20px   ;
+            padding-top: 20px   ;       
             }
-        .profile-container{
+            .profile-container{
             display: flex;
             justify-content: center;
             }
+
+            .profile-pic{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center right;
         }
+        }
+
+        @media screen and (max-width: 600px){
+            
+            .social-media-container{
+                display: flex;
+                flex-direction: column   ;
+                align-items: center;
+                row-gap: 15px;
+                }
+        }
+
     </style>
 
 </head>
@@ -130,36 +148,18 @@
 
     <div class="head-container">
         <div style="display:flex;flex-direction:row;align-items:flex-start">
-            <div style="min-width: 500px;">
-                <h1      >
+            <div>
+                <h1  style="text-align: left;"   >
                     Joachim Pomper, BSc <br>
                     <span style="font-size:20px">
                         Physics master student at 
                         University of Graz.
                     </span>
                 </h1>
-            
                 <div class="profile-container">
-
                     <img class="profile-pic" src="Graphix/profile_pic.jpg" alt="Avatar">
-
-                    <div class="social-media-container">
-                    
-                        <a class="social-link" href="https://twitter.com/JoachimPomper">
-                        <i class="fa fa-twitter" style="font-size:14px;color:black"> </i> &nbsp; Joachim Pomper </a>  
-
-                        <a class="social-link" href="https://github.com/HoneyBadger220497">
-                        &nbsp;&nbsp;
-                        <i class="fa fa-github" style="font-size:14px;color:black"></i> &nbsp; HoneyBadger220497</a>   
-
-                        <a class="social-link" href="mailto:joachim.pomper@edu.uni-graz.at">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                        <i class="fa fa-envelope" style="font-size:14px;color:black"></i> &nbsp; joachim.pomper@edu.uni-graz.at</a>
-            
-                    </div>
                 </div>
             </div>
-
         </div>
     </div>
     
@@ -169,31 +169,64 @@
             <div style="font-weight:bold;padding-bottom: 5px;">Welcome to my webpage!
             </div>
             My name is  Joachim and I am currently a physics Master student at the <a class="text-link" href="https://www.uni-graz.at/de/"> University of Graz</a>, busy with finishing my masters thesis about a class of composite dark matter models. I use this website to provide some information about me, my studies and future research interests, as well as to display a few projects I did in the past. Fell free to browse a little. If you are interested in getting in touch don't hesitate to contact me.
-        </div>  
+        </div> 
+        
+    </div>
+
+    <h3 style="text-align:center;padding-bottom:20px;" id="aboutme">
+        Contact
+    </h3>
+    <div class="social-media-container" style="padding-bottom: 20px;">
+        <div class="social-box">
+            <a class="social-button" href="https://twitter.com/JoachimPomper">
+            Twitter  
+            </a>
+        <span style="font-size: 12px;">Joachim Pomper</span>
+        </div>
+        <div class="social-box">
+            <a class="social-button" href="joachim.pomper@edu.uni-graz.at">
+            E-Mail  
+            </a> 
+            <span style="font-size: 12px;">joachim.pomper@edu.uni-graz.at</span>
+        </div>
+        <div class="social-box">
+            <a class="social-button" href="https://github.com/HoneyBadger220497">
+            Github  
+            </a>
+            <span style="font-size: 12px;">HoneyBadger220497</span>
+        </div>
     </div>
     
     <!-- About me -->
-    <div class="section-bar"  id="aboutme"></div>
+    <div class="section-bar"  ></div>
     <div class="section-container">
         <h2>
             About me
             <hr>
         </h2>
         <div class="text-block">
-            After I finished school and my civil service in 2016 I enrolled at the <a class="text-link" href="https://www.tugraz.at/home"> Technical University Graz</a> in order to study physics. My first day I began equipped with the book "A brief history of time" and the naive goal to unify quantum theory and gravity. What a fool I was! A bit overwelmed with all the interesting topics, I started to study mechanics, thermodynamics,  electromagnetism, fluidmechanics, special relatitivity, solid state physics and quantum mechanics both theoreticaly and experimentally. Unfortunatly general relativity was not a part of the bachelors programm. However I had great fun studying and teaching undergraduate physics. My first position as a student assistent was on the subject of linear algebra in my third semester. Unexpectedly I discovered my fascination with abstract maths when I was preparing for that position. Thus, during my physics bachelor, I picked up several classes in the maths bachelor too. 
+            After I finished school and my civil service in 2016, I enrolled at the <a class="text-link" href="https://www.tugraz.at/home"> Technical University Graz</a> in order to study physics. My first day I began equipped with the book "A brief history of time" and the naive goal to unify quantum theory and gravity. What a fool I was! A bit overwhelmed with all the interesting topics, I started to study mechanics, thermodynamics,  electromagnetism, fluid mechanics, special relativity, solid state physics and quantum mechanics both theoretically and experimentally. Unfortunately general relativity was not a part of the bachelors program. However, I had great fun studying and also teaching undergraduate physics. My first position as a student assistant was on the subject of linear algebra in my third semester. Unexpectedly I discovered my fascination with abstract mathematics when I was preparing for that position. During my physics bachelor, I continued to pick up several additional classes from the mathematics bachelor program. 
         </div>
         <div class="text-block">
-            At the end of my physics bachelor 2019, I began to work partime for a company, developing automation and control systems for renewable energy grids. I was programming a simulation for heating grids, including thermal buffer storages and heat exchangers. During that time I took additional courses in maths on measure theory, numerics and functional analysis. 
+            At the end of my physics bachelor 2019, I began to work part-time for a company, developing automation and control systems for renewable energy grids. I was programming a simulation for heating grids, including thermal buffer storage and heat exchangers. During that time I took additional courses in mathematics on measure theory, numerics and functional analysis. 
         </div>
         <div class="text-block">
-            In 2020 I started a masters program at the <a class="text-link" href="#https://www.uni-graz.at/de/"> University of Graz </a> with focus on quantum field theory and gravity. My first gravity course was rather disappointing and I turned more towards quantum theory. I had several positions as a teaching assistent, my favorite however was organising lecture material for Professor Stefan Kurz, from the  <a class="text-link" href="https://www.tu-darmstadt.de/">Technical University     Darmstadt</a>. He was giving a course on differential forms in Electromagnetism in the 2021 summer term. In the summer break of 2021, equipped with two books, an online lecture on Youtube and my newly sparked interesting in geometry, I then decided to take on General Relativity again on my own. Since then I am fascinated with the subject! For my master thesis however I took a very different topic. While studying relativity I came in touch with cosmology and dark matter. Most of my study time I focused on the theoretical aspects of physics and on maths. Hence I figured I could try to something more phenomenological. Even more I wanted to learn more about strongly interacting gauge-theories. I ended up learning a lot about spontanous symmetry breaking, anomalies, homology, representation theory and effective field theories. 
-            In winter 2022 I took a little break to travel to Australia, where I was invited to present some of the results of my masters thesis at <a class="text-link" href="https://indico.cern.ch/event/1107937/">DSU 2022</a>. I returned in new year and currently I am writing up my thesis, while looking for a PhD psoition somewhere at the intersection between Quantum Field Theory and Gravity.          
+            In 2020 I started a masters program at the <a class="text-link" href="#https://www.uni-graz.at/de/"> University of Graz </a> with focus on quantum field theory and gravity. My first gravity course was rather disappointing, thus I turned more towards quantum theory. I had several positions as a teaching assistant, my favorite one however was to provide lecture material for Professor Stefan Kurz, from the  <a class="text-link" href="https://www.tu-darmstadt.de/">Technical University     Darmstadt</a>. He was giving a course on differential forms in Electromagnetism in the 2021 summer term. In the summer break of 2021, equipped with two books, an online lecture on Youtube and my newly sparked interesting in geometry, I decided to take on general relativity again on my own. Since then, I am fascinated with the subject! For my master thesis however I chose a very different topic. While studying relativity I came in touch with cosmology and dark matter. Most of my study time I focused on the theoretical aspects of physics and on mathematics. Hence, I figured I could try to do something more phenomenological. Additionally, I wanted to learn more about strongly interacting gauge-theories. During my masters thesis learning a lot about spontaneous symmetry breaking, anomalies, homology, representation theory and effective field theories. 
+            In winter 2022 I took a little break to travel to Australia, where I was invited to present some results of my masters thesis at <a class="text-link" href="https://indico.cern.ch/event/1107937/">DSU 2022</a>. I returned in new year. Currently, I am writing up my thesis, while looking for a PhD position somewhere at the intersection between Quantum Field Theory and Gravity.          
+        </div>
+        <div class="project-bottom-line">
+            <div> 12.01.2023</div>
+            <div>
+                <a class="pdf-button" href="#">
+                    CV.pdf      
+                </a>
+            </div>
         </div>
         <h3 style="text-align:center;padding-bottom:20px;">
             Research interests
         </h3>
         <div class="text-block">
-            Main interests are colored. About every topic I have heard at least something briefly in lecture at university or a summerschool, a talk at a conference or read something in a paper. The Topics surrounded with thicker lines are those I already have further knwoledge about. The rectangle blocks with double boundary are the general subjects of theoretical physics these topics connect to.             
+            Main interests are colored darker. About every topic I have heard at least something briefly in a lecture at university or a summer school, in a talk at a conference or have read something in a paper. The Topics surrounded with thicker lines are those I already have further knowledge about. The rectangle blocks with double boundary are the general subjects of theoretical physics these topics connect to.             
         </div>
         <div style="display:flex;justify-content: center;">
             <img src="Graphix/research_interests.svg" alt="research interests"
@@ -209,32 +242,32 @@
             <hr>
         </h2>
         <div class="text-block">
-            One of the most prominent problems of modern physics is the mystery of Dark matter. Despite ample observational evidence from astrophysics, there is yet no commonly accepted explanation on the level of particle physics. Several models already have been proposed among which so called WIMP dark matter has been investigated most intensively. In the early 2000 <a class="text-link" href="http://arxiv.org/abs/astro-ph/9909386"> Spergel and Steinhardt </a> proposed that sufficiently strong self interactions among dark matter particles might resolve some structure formation puzzles like the so called Cusp vs. Core problem. Recent works by have restricted the <a class="text-link" href="https://arxiv.org/abs/2012.06611"> bounds </a> on dark-matter selfinteractions further and favor <a class="text-link" href="https://arxiv.org/abs/2205.08088"> models </a> producing <a class="text-link" href="http://arxiv.org/abs/1508.03339"> velocity dependent </a> selfscrattering crosssection. 
+            One of the most prominent problems of modern physics is the mystery of Dark matter. Despite ample observational evidence from astrophysics, there is yet no commonly accepted explanation on the level of particle physics. Several models already have been proposed, among which so-called WIMP dark matter has been investigated most intensively. In the early 2000 <a class="text-link" href="http://arxiv.org/abs/astro-ph/9909386"> Spergel and Steinhardt </a> proposed that sufficiently strong self interactions among dark matter particles might resolve some structure formation puzzles, like the so-called Cusp vs. Core problem. Recent works have restricted the <a class="text-link" href="https://arxiv.org/abs/2012.06611"> bounds </a> on dark-matter self interactions further and favor <a class="text-link" href="https://arxiv.org/abs/2205.08088"> models </a> producing <a class="text-link" href="http://arxiv.org/abs/1508.03339"> velocity dependent </a> self scattering crosssections. 
         </div>    
-        <div class="research-container">
-            <div class="text-block" style="width: 80%;">
-                In my Masters thesis I investigate a class of models for composite dark matter based on a strongly interacting gauge model. In these szenarios dark matter is made up of bound states (dark pions) of some fermions (dark quarks). Due to the underlying new strong interaction sufficiently large self interaction between the dark matter particles are introduced. Futhermore the stability of the dark matter can be explained by an accidental flavor symmetry.  
+        <div class="research-container1">
+            <div class="research-paragraph1">
+                In my Masters thesis I investigate a class of models for composite dark matter based on a strongly interacting gauge theory. In these scenarios, dark matter is made up of bound states (dark pions) of some fermions (dark quarks). Due to the underlying new strong interaction, sufficiently large self interaction between the dark matter particles are introduced. Furthermore, the stability of the dark matter can be explained by an accidental flavor symmetry.  
             </div>   
-            <img src="Graphix/selfinteraction.svg" alt="particles" class="research-pic" style="width: 20%">  
+            <img src="Graphix/selfinteraction.svg" alt="particles" class="research-pic1" >  
         </div>
-        <div class="research-container"> 
-            <img src="Graphix/particles.svg" alt="particles" class="research-pic" style="width: 30%"> 
-            <div class="text-block" style="width: 70%;">
-                My model focuses on fermions that are charged under a real representation, leaving the specific choice of gauge group and representation an open parameter of the theory. As it turns out the reality condition is strong enough to qualitativly restrict all the low energy properties of the theory, while the qualitative features manifest in the low energy effective constants, dependent on the choice of gauge group and representation. The behavor differs from the complex representation of QCD and SU(N) theories and resembles more a SO(N)-like type of theory.        
-                The relevant particles my model describes are fermion-fermion bound states, called dark mesons. The lightest stable states are the pseudo-scalar PNGBs, called dark pions, of a spomtanous symmetry breaking szenario. Further the lightest vector meson states (rho, omega) and a pseudo-scalar flavor-singlet meson (eta) related to the chiral anomaly are included.  
+        <div class="research-container2"> 
+            <img src="Graphix/particles.svg" alt="particles" class="research-pic2"> 
+            <div class="research-paragraph2">
+                My model focuses on fermions that are charged under a real representation, leaving the specific choice of gauge group and representation as an open parameter of the theory. As it turns out the reality condition is strong enough to qualitatively restrict all the low energy properties of the theory. The qualitative features manifest in the low energy effective constants, dependent on the choice of gauge group and representation. The behavior differs from the complex representation of QCD and SU(N) theories and resembles a more SO(N)-like theories.        
+                The relevant particles my model describes are fermion-fermion bound states, called dark mesons. The lightest stable states are the pseudo-scalar PNGBs, called dark pions, of a spontaneous symmetry breaking scenario. Further the lightest vector meson states (rho) and a pseudo-scalar flavor-singlet meson (eta) related to the chiral anomaly are included are also described in the low energy effective theory.   
             </div>    
             
         </div>
-        <div class="research-container">
-            <div class="text-block" style="width: 80%;">
-                If one restricts to a model with 2 fermions one encounters a topological obstruction that leads to the breakdown of <a class="text-link" href="https://www.sciencedirect.com/science/article/abs/pii/0550321383900639">Witten's geometrical construction</a> of the socalled "Anomalous" or "topological" terms in the effective field theory. We had to go back to the original approach of <a class="text-link" href="http://arxiv.org/abs/hep-th/9602093">Wess and Zumino</a>, which directly related the UV-properties with the IR-properties by investigation of anomalous Ward identities in order to construct these terms. These terms incorporate a 3->2 interaction of the pions which contributes (and even may domintate) the freez out Szenario of dark matter. This socalled <a class="text-link" href="https://arxiv.org/abs/1402.5143">SIMP</a> mechanism was proposed and investigated by the group around <a class="text-link" href="https://arxiv.org/abs/1512.07917">Yonit Hochberg</a>. 
+        <div class="research-container1">
+            <div class="    research-paragraph1">
+                If restricting to a model with two Dirac fermion flavors, one encounters a topological obstruction that leads to the breakdown of <a class="text-link" href="https://www.sciencedirect.com/science/article/abs/pii/0550321383900639">Witten's geometrical construction</a> of the so-called "Anomalous" or "topological" terms in the effective field theory. We had to go back to the original approach of <a class="text-link" href="http://arxiv.org/abs/hep-th/9602093">Wess and Zumino</a>, which directly relates the UV-properties with the IR. This happens by investigation of anomalous Ward identities.
+                These terms incorporate a 3->2 interaction of the pions which contributes to (and even may dominate) the freeze-out scenario of dark matter. This so-called <a class="text-link" href="https://arxiv.org/abs/1402.5143">SIMP</a> mechanism was proposed and investigated by the group around <a class="text-link" href="https://arxiv.org/abs/1512.07917">Yonit Hochberg</a>. 
             </div>    
-            <img src="Graphix/wz3.svg" alt="particles" class="research-pic" style="width: 20%"> 
+            <img src="Graphix/wz3.svg" alt="particles" class="research-pic1"> 
         </div>
-        <div class="research-container">
-            <div class="text-block" style="width: 100%;">
-                The model may be viewed as standard modell extension and can be coupled to the SM via a Portal mediator. We investigate the case of a massive dark-photon meditor, kinetically mixing with standard model hypercharge. After the introduction of the mediator dark matter annihilation into the standard model compete with the 3->2 process in the freezout. However another decay channel opens with anomalous vertex of the dark eta particle. At the last step of the project we investigate the freeze out szenario in view of these 3 channels.   
-            </div>    
+        <div class="text-block">
+            The model may be viewed as standard model (SM) extension and can be coupled to the SM via a portal mediator. We investigate the case of a massive dark-photon mediator, kinetically mixing with standard model hypercharge. After the introduction of the mediator, dark matter annihilation into the standard model competes with the 3->2 process in the freeze-out. However, another decay channel opens with an anomalous vertex of the dark eta particle. At the last step of the project we investigate the freeze-out scenario in view of these 3 channels.   
+                
         </div>  
         <div style="display: flex;justify-content: center">
             <img src="Graphix/eta_decay.svg" alt="particles" class="research-pic" style="width: 70%;"> 
@@ -283,7 +316,7 @@
                 ÖPG 2022, The 71st Annual Meeting of the Austrian Physical Society in Leoben [Parallel sessions talk]
             </div>
             <div class="abstract-block">
-                Dark matter makes up the majority of the mass in the universe. Despite ample observational evidence, dark matter has yet no explanation in particle physics. This drives construction of new particle physics theories which can lead to interesting explanations for the nature of dark matter. We present a new particle physics model where dark matter is a composite object much like pions in the Standard Model. Our model is based on a new gauge group -- Sp(4), with matter in antisymmetric representation rather than fundamental representation. We sketch the building blocks of this theory and explain how such theories are different than the usually encountered constructions in particle physics.
+                Dark matter makes up the majority of the mass in the universe. Despite ample observational evidence, dark matter has yet no explanation in particle physics. This drives construction of new particle physics theories which can lead to interesting explanations for the nature of dark matter. We present a new particle physics model where dark matter is a composite object much like pions in the Standard Model. Our model is based on a new gauge group -- Sp(4), with matter in antisymmetric representation rather than fundamental representation. We sketch the building blocks of this theory and explain how such theories are different from the usually encountered constructions in particle physics.
             </div>
             <div class="project-bottom-line">
                 <div> 09.08.2022</div>
@@ -309,7 +342,9 @@
                 Master seminar [University of Graz]
             </div>
             <div class="abstract-block">
-                Dark matter makes up the majority of the mass in the universe. Despite ample observational evidence, dark matter has yet no explanation in particle physics. This drives construction of new particle physics theories which can lead to interesting explanations for the nature of dark matter. We present a new particle physics model where dark matter is a composite object much like pions in the Standard Model. Our model is based on a new gauge group -- Sp(4), with matter in antisymmetric representation rather than fundamental representation. We sketch the building blocks of this theory and explain how such theories are different than the usually encountered constructions in particle physics.
+                In the first part of this talk I would like to review some astrophysical observations, leading to the conclusion of a non-visible matter component.  While doing so, I focus especially on introducing and explaining the key notions in dark matter phenomenology as well as the underlying model assumption (often made implicitly). 
+                In the second part of the talk, I will elaborate the concept of freeze out of a particle species in the context of dark matter. The goal is to establish a connection between the astrophysical observables and particle physics, illustrated by the WIMP Miracle.
+                The overall purpose of the talk is to give a good overview how the fields of general relativity, thermodynamics and quantum field theory connect  in the field of dark matter phenomenology and to provide cross links between those fields, providing the background knowledge for future talks held by me or members of the research group on strongly interacting dark matter models at KFU Graz.
             </div>
             <div class="project-bottom-line">
                 <div> 01.02.2022</div>
@@ -338,7 +373,7 @@
                 Bachelor thesis [In German]
             </div>
             <div class="abstract-block">
-                This theses intends to provide a most elegant derivation of the exact analytic formula of the spontanous magnetization of the 2d Ising-Model, dependent on temperature. A result which was first stated by Lars Onsager. In order to do so the combinatorical problem, encountered when trying to calculate the partition function of the system, is mapped onto an easier algebraic problem. This is done with the help of so-called Graßmann-Numbers. Mathmathical theorem, such as the Szegö's theorem, are used in order to perform the thermodynamiacal limit. This work restricts to isotropic, homogenous two dimensional Ising lattices with periodic boundary conditions. The ideas of this derivation go back to works of Stuart Samuel, Elliot W.Montroll, Renfrey B. Potts und John C. Ward and are not a new result. 
+                This theses intends to provide a most elegant derivation of the exact analytic formula of the spontaneous magnetization of the 2d Ising-Model, dependent on temperature. A result which was first stated by Lars Onsager. In order to do so the combinatorial problem, encountered when trying to calculate the partition function of the system, is mapped onto an easier algebraic problem. This is done with the help of so-called Graßmann-numbers. Mathematical theorem, such as the Szegö's theorem, are used in order to perform the thermodynamic limit. This work restricts to isotropic, homogenous two-dimensional Ising lattices with periodic boundary conditions. The ideas of this derivation go back to works of Stuart Samuel, Elliot W.Montroll, Renfrey B. Potts und John C. Ward and are not a new result. 
             </div>  
             <div class="project-bottom-line">
                 <div> 20.09.2020</div>
@@ -393,7 +428,7 @@
                 Student project for a course by Reinhard Alkofer
             </div>
             <div class="abstract-block">
-                In this project we treat a thought-experiment of an astronaut near the event Horizon of a static Black Hole, who drops a Probe into the Black Hole and measures the light signal transmitted by the Probe. We review the properties of the Schwarzschild spacetime in different charts, explain the disadvantages and ambiguities of the Schwarzschild chart and introduce non-pathological coordinates such as lightcone coordinates and Kruskal-Szekeres coordinates. The redshifts, null-geodesics, horizion as well as the introduction of a proper time-orientation on the spacetime are discussed. The apparent paradox, that the probe drops into the black hole after finite time without the astronaut ever observing, it is neatly explained and visualized by the use of these new coordinates in a Penrose diagram.    
+                In this project we treat a thought-experiment of an astronaut near the event Horizon of a static Black Hole, who drops a Probe into the Black Hole and measures the light signal transmitted by the Probe. We review the properties of the Schwarzschild spacetime in different charts, explain the disadvantages and ambiguities of the Schwarzschild chart and introduce non-pathological coordinates such as lightcone coordinates and Kruskal-Szekeres coordinates. The redshifts, null-geodesics, horizon as well as the introduction of a proper time-orientation on the spacetime are discussed. The apparent paradox, that the probe drops into the black hole after finite time without the astronaut ever observing, it is neatly explained and visualized by the use of these new coordinates in a Penrose diagram.    
             </div>
             <div class="project-bottom-line">
                 <div> 08.12.2021</div>
@@ -436,9 +471,9 @@
     <div class="section-container">
 
         <div style="display:flex;justify-content: center;">
-            <img src="Graphix/Rocketman.svg" alt="Rocketman">
+            <img src="Graphix/Rocketman.svg" alt="Rocketman" style="object-fit: contain; width:100%;">
         </div>
 
-</body>
+</body> 
 
 </html>
