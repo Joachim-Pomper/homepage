@@ -1,80 +1,92 @@
-.research-container1{
+.research-container-left{
     display: flex;
     justify-content: space-between
 }
-.research-container2{
+.research-container-right{
     display: flex;
     justify-content: space-between
 }
 
-.research-paragraph1{
+.research-paragraph-left{
     text-align: justify;
     padding-left: 15px;
     padding-bottom: 10px;
     width: 80%
 }
-.research-paragraph2{
+.research-paragraph-right{
     text-align: justify;
     padding-left: 15px;
     padding-bottom: 10px;
     width: 70%;
 }
 
-
-.research-pic1{
+.research-pic-left{
     object-fit: contain;
     object-position: center center  ;
     padding-left: 15px;
     "width: 20%;
 }
 
-.research-pic2{
+.research-pic-right{
     object-fit: contain;
     object-position: center center  ;
     padding-left: 15px;
     width: 30%;
 }
 
-@media screen and (max-width: 800px){
+.research-pic-bottom{
+    object-fit: contain;
+    object-position: center center  ;
+    width: 70%;
+    margin-top: 20px;
+}   
+
+@media screen and (max-width: 780px){
             
-    .research-container1{
+    .research-container-left{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .research-container2{
+    .research-container-right{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;    
         align-items: center;
     }
     
-    .research-paragraph1{
+    .research-paragraph-left{
         text-align: justify;
         padding-left: 15px;
         padding-bottom: 10px;
         width: 100%
     }
-    .research-paragraph2{
+    .research-paragraph-right{
         text-align: justify;
         padding-left: 15px;
         padding-bottom: 10px;
         width: 100%;
     }
     
-    .research-pic1{
+    .research-pic-left{
         object-fit: contain;
         object-position: center center  ;
         padding-left: 15px;
-        width: 40%;
+        width: 60%;
     }
     
-    .research-pic2{
+    .research-pic-right{
         object-fit: contain;
         object-position: center center  ;
         padding-left: 15px;
-        width: 50%;
+        width: 80%;
         padding-bottom: 10px;
+    }   
+
+    .research-pic-bottom{
+        object-fit: contain;
+        object-position: center center  ;
+        width: 90%;
     }   
 }
