@@ -125,12 +125,13 @@
             .profile-title{
                 margin-left: 10%;
                 margin-right: 10%;
-            }    
+            }       
 
             .profile-subtitle{
                 margin-left: 10%;
                 margin-right: 10%;
             }
+
         }
 
     </style>
@@ -141,17 +142,31 @@
 
     <!-- Title Profile-->
     <div style="padding-top: 25px;"></div>
-    <div class="nav-bar">
-        <div class="nav-block">
+    <div class="nav-bar" id="nav-bar">
+        <!-- nav-bar if screen is wide -->
+        <div class="nav-menu">
             <a class="nav-button" href="#aboutme"> About me</a>
             <a class="nav-button" href="#research"> My research </a>
             <a class="nav-button" href="#talks"> Talks </a>
             <a class="nav-button" href="#theses"> Theses </a>
             <a class="nav-button" href="#projects"> Student projects </a>
         </div>
+        <!-- nav-menu if screen is small -->
+        
+
+        <div id="nav-menu-collapse" 
+        class="nav-menu-collapse">
+            <button class="nav-openbtn" id="openbtn" onclick="openNav()">☰</button> 
+            <button class="nav-closebtn" id="closebtn"  onclick="closeNav()">☰</button>
+            <a class="nav-button" href="#aboutme"> About me</a>
+            <a class="nav-button" href="#research"> My research </a>
+            <a class="nav-button" href="#talks"> Talks </a>
+            <a class="nav-button" href="#theses"> Theses </a>
+            <a class="nav-button" href="#projects"> Student projects </a>
+          </div>
     </div> 
 
-    <div class="head-container">
+    <div class="head-container" id="head-container">
         <div style="display:flex;flex-direction:row;align-items:flex-start;">
             <div>
                 <div class="profile-container">
@@ -522,7 +537,28 @@
         <div style="display:flex;justify-content: center;">
             <img src="graphix/Rocketman.svg" alt="Rocketman" style="object-fit: contain; width:100%;">
         </div>
+    </div>
+
+    <!-- Java Script-->
+    <script>
+        function openNav() {
+          document.getElementById("nav-menu-collapse").style.height = "170px";
+          document.getElementById("nav-bar").style.height = "170px";
+          document.getElementById("head-container").style.paddingTop = "190px";
+          document.getElementById("openbtn").style.display = "none";
+          document.getElementById("closebtn").style.display = "flex";
+        }
+        
+        function closeNav() {
+          document.getElementById("nav-menu-collapse").style.height = "30px";
+          document.getElementById("nav-bar").style.height = "30px";
+          document.getElementById("head-container").style.paddingTop = "20px";
+          document.getElementById("openbtn").style.display = "flex";
+          document.getElementById("closebtn").style.display = "none";
+        }
+    </script>
 
 </body> 
 
 </html>
+
