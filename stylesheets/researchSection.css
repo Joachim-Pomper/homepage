@@ -87,6 +87,6 @@
     .research-pic-bottom{
         object-fit: contain;
         object-position: center center  ;
-        width: 90%;
+        width: 100%;
     }   
 }
