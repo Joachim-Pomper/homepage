@@ -35,8 +35,7 @@
             background-size: contain;
             padding-left: 8%;
             padding-right: 8%;   
-            padding-bottom: 10px;
-            padding-top: 20px;  
+            padding-top: 20px;      
         }
 
         .profile-container{
@@ -62,7 +61,7 @@
            flex-direction: row;
            align-items: center;
            justify-content: center;
-           row-gap: 10px;
+           row-gap: 5px;
         }
 
         .social-box{
@@ -73,7 +72,7 @@
             width: 250px;
             }
 
-        @media screen and (max-width: 620px){
+        @media screen and (max-width: 730px){
             .head-container{
                 color: black;
                 background-color: #ffffff;
@@ -88,6 +87,8 @@
                 padding-top: 20px;  
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+                align-items: center;
             }
 
             .profile-container{
@@ -137,7 +138,7 @@
     </div> 
 
     <div class="head-container">
-        <div style="display:flex;flex-direction:row;align-items:flex-start">
+        <div style="display:flex;flex-direction:row;align-items:flex-start;">
             <div>
                 <div class="profile-container">
                     <img class="profile-pic" src="graphix/profile_pic.jpg" alt="Avatar">
@@ -152,10 +153,38 @@
                 </div>   
             </div>
         </div>
+        <div style="padding-top: 35px; display:flex; align-items:center; justify-content: center; "> 
+            <span style="text-align:center;padding-bottom:20px; font-size: 18px; font-weight: bold;" id="aboutme">
+                    Contact
+            </span>
+        </div>
+        
     </div>
     
+        <div class="social-media-container" style="padding-bottom: 20px;">
+            <div class="social-box">
+                <a class="social-button" href="https://twitter.com/JoachimPomper">
+                Twitter  
+                </a>
+            <span style="font-size: 14px;">Joachim Pomper</span>
+            </div>
+            <div class="social-box">
+                <a class="social-button" href="joachim.pomper@edu.uni-graz.at">
+                E-Mail  
+                </a> 
+                <span style="font-size: 14px;">joachim.pomper@edu.uni-graz.at</span>
+            </div>
+            <div class="social-box">
+                <a class="social-button" href="https://github.com/HoneyBadger220497">
+                Github  
+                </a>
+                <span style="font-size: 14px;">HoneyBadger220497</span>
+            </div>
+        </div>
+
+
     <div class="section-bar"></div>
-    <div class="section-container" style="padding-top:20px;">
+    <div class="section-container" style="padding-top:10px;">
         <div class="text-block">
             <div style="font-weight:bold;padding-bottom: 5px;">Welcome to my webpage!
             </div>
@@ -164,33 +193,7 @@
         
     </div>
 
-    <div style="padding-top: 15px; display:flex; align-items:center; "> 
-    </div>
-    <span style="text-align:center;padding-bottom:20px; font-size: 18px; font-weight: bold;" id="aboutme">
-            Contact
-    </span>
     
-    
-    <div class="social-media-container" style="padding-bottom: 20px;">
-        <div class="social-box">
-            <a class="social-button" href="https://twitter.com/JoachimPomper">
-            Twitter  
-            </a>
-        <span style="font-size: 16px;">Joachim Pomper</span>
-        </div>
-        <div class="social-box">
-            <a class="social-button" href="joachim.pomper@edu.uni-graz.at">
-            E-Mail  
-            </a> 
-            <span style="font-size: 16px;">joachim.pomper@edu.uni-graz.at</span>
-        </div>
-        <div class="social-box">
-            <a class="social-button" href="https://github.com/HoneyBadger220497">
-            Github  
-            </a>
-            <span style="font-size: 16px;">HoneyBadger220497</span>
-        </div>
-    </div>
     
     <!-- About me -->
     <div class="section-bar"  ></div>
