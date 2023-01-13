@@ -58,13 +58,13 @@
     
     .research-paragraph-left{
         text-align: justify;
-        padding-left: 15px;
+        padding-left: 0px;
         padding-bottom: 10px;
         width: 100%
     }
     .research-paragraph-right{
         text-align: justify;
-        padding-left: 15px;
+        padding-left: 0px;
         padding-bottom: 10px;
         width: 100%;
     }
