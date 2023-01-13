@@ -1,7 +1,5 @@
 /* Body and background */
 
-/*  #cbefff bright
-    #9cc7ff dark*/
 body {
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
@@ -22,13 +20,28 @@ body {
     padding-top: 15px;   
     display:flex;
     flex-direction:column; 
-    margin-left: 3%;
-    margin-right: 3%;
 }
 
 .section-bar{
     background-color: #ffffff;;
     padding-top: 10px;
+}
+
+.list-centered{
+    display: flex;
+    flex-direction: column   ;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 780px){
+    .section-container{
+        color: black;
+        font-size: 16px;
+        background-color: #ffffff;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
 }
 
 /* Navigation */
@@ -115,27 +128,17 @@ body {
     font-weight: bold;
 }
 
-.social-link{
-    font-size: 12px;
-    color: black;
-    text-decoration: none;
- }
-
- .social-link:hover{
-     font-weight: bold;
- }
-
- .text-link{
+.text-link{
     text-decoration:none;
     font-style: italic;
     color: black;
  }
 
- .text-link:hover{
+.text-link:hover{
     color: rgb(71, 71, 71);
  }
 
- .pdf-button{
+.pdf-button{
     font-size: 14px;
     text-decoration: none;
     color: black;   
@@ -149,12 +152,12 @@ body {
     margin: 5px;
  }
 
- .pdf-button:hover{
+.pdf-button:hover{
     border-color: black;
     background-color: #9cc7ff;
  }
 
- .social-button{
+.social-button{
     font-size: 16px;
     text-decoration: none;
     color: black;   
@@ -169,7 +172,7 @@ body {
     margin: 5px;
  }
 
- .social-button:hover{
+.social-button:hover{
     border-color: black;
     background-color: #cbefff;
  }
@@ -186,7 +189,6 @@ body {
 @media screen and (max-width: 480px){
     
 .text-block{
-    text-align: justify;
-    padding-bottom: 10px;
+    padding-left: 0px;
 }
 }
