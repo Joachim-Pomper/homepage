@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal webpage of Joachim Pomper</title>
+
+    <!-- Icon-->
+    <link rel="icon" href="graphix/icon.svg">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- Fa fa signs for Twitter, Mail and Github-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS classes -->    
+    
+    <link rel="stylesheet" href="stylesheets/basicContainer.css">
+    <link rel="stylesheet" href="stylesheets/projectDisplays.css">
+    <link rel="stylesheet" href="stylesheets/researchSection.css">
+
+</head>
+
+<body>
+
+    <!-- Title Profile-->
+    <div style="padding-top: 25px;"></div>
+    <div class="nav-bar" id="nav-bar">
+        <!-- nav-bar if screen is wide -->
+        <div class="nav-menu">
+            <a class="nav-button" href="index.html"> Home </a>
+            <a class="nav-button" href="index.html#aboutme"> About me</a>
+            <a class="nav-button" href="research.html#research"> My research </a>
+            <a class="nav-button" href="research.html#talks"> Talks </a>
+            <a class="nav-button" href="projects.html#theses"> Theses </a>
+            <a class="nav-button" href="projects.html#projects"> Student projects </a>
+            <a class="nav-button" href="teaching.html"> Teaching </a>
+        </div>
+        <!-- nav-menu if screen is small -->
+
+        <div id="nav-menu-collapse" 
+        class="nav-menu-collapse">
+            <button class="nav-openbtn" id="openbtn" onclick="openNav()">☰</button> 
+            <button class="nav-closebtn" id="closebtn"  onclick="closeNav()">☰</button>
+            <div class="nav-menu">
+                <a class="nav-button" href="index.html"> Home </a>
+                <a class="nav-button" href="index.html#aboutme"> About me</a>
+                <a class="nav-button" href="research.html#research"> My research </a>
+                <a class="nav-button" href="research.html#talks"> Talks </a>
+                <a class="nav-button" href="projects.html#theses"> Theses </a>
+                <a class="nav-button" href="projects.html#projects"> Student projects </a>
+                <a class="nav-button" href="teaching.html"> Teaching </a>
+            </div>
+          </div>
+    </div>
+
+    <div class="section-container">
+        <div style="padding-top: 50px;" class="text-block">
+            Here you can find my Bachelor thesis and Master thesis, as well as several other projects at did during my time as a master student. Feel free to browse!
+        </div>
+    </div>
+     <!-- Theses -->
+     <div class="section-bar" id="theses" style="padding-top: 20px;"></div>
+     <div class="section-container">
+        <h2>
+            Theses
+            <hr>
+        </h2>
+        <div class="project-container"> 
+            <div class ="project-title">
+                Analytical calculation of the spontaneous magnetization of homogeneous, isotropic 2d Ising ferromagnets with the help of Grassmann numbers.
+            </div>
+            <div class="project-subtitle">
+                Bachelor thesis [In German]
+            </div>
+            <div>Supervisor: <a class="supervisor-link" href="https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenId=55742483543E2BA9&pPersonenGruppe=3"> Univ.-Prof. Dipl.-Phys. Dr.rer.nat Wolfgang von der Linden</a> 
+            </div>
+            <div class="abstract-block">
+                This theses intends to provide a most elegant derivation of the exact analytic formula of the spontaneous magnetization of the 2d Ising-Model, dependent on temperature. A result which was first stated by Lars Onsager. In order to do so the combinatorial problem, encountered when trying to calculate the partition function of the system, is mapped onto an easier algebraic problem. This is done with the help of so-called Graßmann-numbers. Mathematical theorem, such as the Szegö's theorem, are used in order to perform the thermodynamic limit. This work restricts to isotropic, homogenous two-dimensional Ising lattices with periodic boundary conditions. The ideas of this derivation go back to works of Stuart Samuel, Elliot W.Montroll, Renfrey B. Potts und John C. Ward and are not a new result. 
+            </div>  
+            <div class="project-bottom-line">
+                <div> 20.09.2020</div>
+                <div>
+                    <a class="pdf-button" href="theses/Bachelor/BachelorThesis.pdf">
+                        Thesis.pdf  
+                    </a>
+                    <a class="pdf-button" href="theses/Bachelor/BachelorPresentation.pdf">
+                        Slides.pdf  
+                    </a>
+                </div>  
+            </div>
+        </div>
+
+        <div class="project-container"> 
+            <div class ="project-title">
+                Low energy effective description of strongly interaction, QCD-like dark matter, with fermions in a real representation. 
+            </div>
+            <div class="project-subtitle">
+                Master thesis [Work in progress]
+            </div>
+            <div>Supervisor: <a class="supervisor-link" href="https://homepage.uni-graz.at/de/suchita.kulkarni/"> Dr. Suchita Kulkarni</a>  
+            </div>
+            <div class="abstract-block">
+                I study a class of composite dark matter models with matter fields in a real representation under a non-abelian gauge group. As an exemplary theory I study a Sp(4) gauge theory, with fermions transforming in the antisymmetric representation. I analyze the structure of these theories in the UV and discuss the building blocks of the low energy effective theory in the IR, describing the dynamics of the cold dark matter. I put special focus on the construction of topological terms responsible for 3→2 cannibalization processes within the dark sector and on the physics of the pseudo scalar singlet related to the axial anomaly. For more information see the <a class="text-link" href="#research">research</a> section on the homepage 
+            </div>  
+            <div class="project-bottom-line">
+                <div> 13.01.2023</div>
+                <div>
+                    <a class="pdf-button"  href="#research">My research</a>
+                </div>  
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Student projects -->
+    <div class="section-bar" id="projects" style="padding-top: 20px;"></div>
+    <div class="section-container">
+        <h2>
+            Student projects
+            <hr>
+        </h2>
+        <div class="project-container"> 
+            <div class ="project-title">
+                Particle creation in an expanding universe. 
+            </div>
+            <div class="project-subtitle">
+                Student project for a course by Reinhard Alkofer
+            </div>
+            <div class="abstract-block">
+                In this project we consider a real scalar quantum field coupled in an expanding spatially-flat FLRW universe. The case of minimal and conformal coupling to the background metric are considered and for the FLRW scaling factor we picked the non-physical choice of a Sauter pulse. Due to the lack of an appropriate notion of time-translation symmetry, energy conservation is violated and one typically expects particle creation. The problem is analytically solvable in terms of hypergeometric functions and thus allows a nice discussion of the rate and amount of produced particles in terms of their mass, the expansion rate and the total expansion. 
+            </div>
+            <div class="project-bottom-line">
+                <div> 30.01.2022</div>
+                <div>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/ParticleCreation/Notes_ParticleCreationInAnExpandingUniverse.pdf">
+                        Notes.pdf  
+                    </a>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/ParticleCreation/Presentation_ParticleCreationInAnExpandingUniverse.pdf">
+                        Slides.pdf      
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-container"> 
+            <div class ="project-title">
+                A simple way to explain phenomena at the event horizon of a static black hole.
+            </div>
+            <div class="project-subtitle">
+                Student project for a course by Reinhard Alkofer
+            </div>
+            <div class="abstract-block">
+                In this project we treat a thought-experiment of an astronaut near the event Horizon of a static Black Hole, who drops a Probe into the Black Hole and measures the light signal transmitted by the Probe. We review the properties of the Schwarzschild spacetime in different charts, explain the disadvantages and ambiguities of the Schwarzschild chart and introduce non-pathological coordinates such as lightcone coordinates and Kruskal-Szekeres coordinates. The redshifts, null-geodesics, horizon as well as the introduction of a proper time-orientation on the spacetime are discussed. The apparent paradox, that the probe drops into the black hole after finite time without the astronaut ever observing, it is neatly explained and visualized by the use of these new coordinates in a Penrose diagram.    
+            </div>
+            <div class="project-bottom-line">
+                <div> 08.12.2021</div>
+                <div>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/Blackhole/Notes_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">
+                        Notes.pdf  
+                    </a>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/Blackhole/Presentation_ASimpleWayToExplainPhenomenaAtTheEventHorizonOfAStaticBlackHole.pdf">
+                        Slides.pdf      
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-container"> 
+            <div class ="project-title">
+                Functional Renormalization Group approach for interaction Dirac fermions.
+            </div>
+            <div class="project-subtitle">
+                Student project for a course by Reinhard Alkofer
+            </div>
+            <div class="abstract-block">
+                In this project we derive the fermionic version of the Wetterich equation for the functional renormalization group flow and apply it to the Gross-Neveu model with N fermion flavors.  A simplistic ansatz for the quantum effective action allows for an analytic solution of the system. The flow equation and the running of couplings are calculated and discussed.
+            </div>
+            <div class="project-bottom-line">
+                <div> 14.05.2021</div>
+                <div>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/FRG/Notes_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">
+                        Notes.pdf  
+                    </a>
+                    <a class="pdf-button" href="student_projects/UniversityCourseProjects/FRG/Presentation_FunctionalRenormalizationGroupApproachForInteractingDiracFermions.pdf">
+                        Slides.pdf      
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="section-container">
+
+        <div style="display:flex;justify-content: center;">
+            <img src="graphix/Rocketman.svg" alt="Rocketman" style="object-fit: contain; width:100%;">
+        </div>
+    </div>
+
+    <!-- Java Script-->
+    <script>
+        function openNav() {
+          document.getElementById("nav-menu-collapse").style.height = "220px";
+          document.getElementById("nav-bar").style.height = "220px";
+          document.getElementById("head-container").style.paddingTop = "250px";
+          document.getElementById("openbtn").style.display = "none";
+          document.getElementById("closebtn").style.display = "flex";
+        }
+        
+        function closeNav() {
+          document.getElementById("nav-menu-collapse").style.height = "30px";
+          document.getElementById("nav-bar").style.height = "30px";
+          document.getElementById("head-container").style.paddingTop = "20px";
+          document.getElementById("openbtn").style.display = "flex";
+          document.getElementById("closebtn").style.display = "none";
+        }
+    </script>
+
+</body> 
+
+</html>
+
