@@ -30,8 +30,6 @@
 
 <body>
 
-    <div style="padding-top: 20px;"></div>
-
     <!-- Title Profile-->
     <div style="padding-top: 25px;"></div>
     <div class="nav-bar" id="nav-bar">
@@ -62,8 +60,9 @@
         </div>
     </div>
     
+    <div id="top-bar" style="padding-top: 20px;"></div>
     <div class="section-container">
-        <div style="padding-top: 50px;" class="text-block">
+        <div style="padding-top: 50px;" class="text-block"></div>
             Here you can find some information about my current research project as well as the associated talks I have given at various occasions.
         </div>
     </div>
@@ -201,7 +200,7 @@
         function openNav() {
           document.getElementById("nav-menu-collapse").style.height = "220px";
           document.getElementById("nav-bar").style.height = "220px";
-          document.getElementById("head-container").style.paddingTop = "250px";
+          document.getElementById("top-bar").style.paddingTop = "250px";
           document.getElementById("openbtn").style.display = "none";
           document.getElementById("closebtn").style.display = "flex";
         }
@@ -209,7 +208,7 @@
         function closeNav() {
           document.getElementById("nav-menu-collapse").style.height = "30px";
           document.getElementById("nav-bar").style.height = "30px";
-          document.getElementById("head-container").style.paddingTop = "20px";
+          document.getElementById("top-bar").style.paddingTop = "30px";
           document.getElementById("openbtn").style.display = "flex";
           document.getElementById("closebtn").style.display = "none";
         }

@@ -60,6 +60,7 @@
         </div>
     </div>
 
+    <div id="top-bar" style="padding-top: 20px;"></div>
     <div class="section-container">
         <div style="padding-top: 50px;" class="text-block">
             Here you can find my Bachelor thesis and Master thesis, as well as several other projects at did during my time as a master student. Feel free to browse!
@@ -209,7 +210,7 @@
         function openNav() {
           document.getElementById("nav-menu-collapse").style.height = "220px";
           document.getElementById("nav-bar").style.height = "220px";
-          document.getElementById("head-container").style.paddingTop = "250px";
+          document.getElementById("top-bar").style.paddingTop = "250px";
           document.getElementById("openbtn").style.display = "none";
           document.getElementById("closebtn").style.display = "flex";
         }
@@ -217,7 +218,7 @@
         function closeNav() {
           document.getElementById("nav-menu-collapse").style.height = "30px";
           document.getElementById("nav-bar").style.height = "30px";
-          document.getElementById("head-container").style.paddingTop = "20px";
+          document.getElementById("top-bar").style.paddingTop = "30px";
           document.getElementById("openbtn").style.display = "flex";
           document.getElementById("closebtn").style.display = "none";
         }
