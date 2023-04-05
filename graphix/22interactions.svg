@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   x="0"
+   y="0"
+   width="255"
+   height="117"
+   style="fill:none"
+   version="1.1"
+   id="svg10132"
+   sodipodi:docname="32interactions.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10136" />
+  <sodipodi:namedview
+     id="namedview10134"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.8217523"
+     inkscape:cx="331"
+     inkscape:cy="62.028192"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10132" />
+  <svg
+     class="role-diagram-draw-area"
+     version="1.1"
+     id="svg10096"
+     width="100%"
+     height="100%">
+    <g
+       class="shapes-region"
+       style="fill:none;stroke:#000000"
+       id="g10088">
+      <g
+         class="arrow-line"
+         id="g10050">
+        <path
+           class="connection real"
+           stroke-dasharray="none"
+           d="M 50,100 110,70"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path10042" />
+        <g
+           id="g10048">
+          <g
+             stroke="none"
+             fill="#000"
+             transform="rotate(153.43,33.465245,51.118448)"
+             style="fill:#000000;stroke:none;stroke-width:1"
+             id="g10046">
+            <path
+               d="M 12,-3 0,0 12,3 Z"
+               id="path10044" />
+          </g>
+        </g>
+      </g>
+      <g
+         class="arrow-line"
+         id="g10060">
+        <path
+           class="connection real"
+           stroke-dasharray="none"
+           d="m 50,20 60,30"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path10052" />
+        <g
+           id="g10058">
+          <g
+             stroke="none"
+             fill="#000"
+             transform="rotate(-153.43,47.632059,8.8815523)"
+             style="fill:#000000;stroke:none;stroke-width:1"
+             id="g10056">
+            <path
+               d="M 12,-3 0,0 12,3 Z"
+               id="path10054" />
+          </g>
+        </g>
+      </g>
+      <g
+         class="arrow-line"
+         id="g10070">
+        <path
+           class="connection real"
+           stroke-dasharray="none"
+           d="M 150,50 210,20"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path10062" />
+        <g
+           id="g10068">
+          <g
+             stroke="none"
+             fill="#000"
+             transform="rotate(153.43,89.368084,37.924126)"
+             style="fill:#000000;stroke:none;stroke-width:1"
+             id="g10066">
+            <path
+               d="M 12,-3 0,0 12,3 Z"
+               id="path10064" />
+          </g>
+        </g>
+      </g>
+      <g
+         class="arrow-line"
+         id="g10080">
+        <path
+           class="connection real"
+           stroke-dasharray="none"
+           d="m 150,70 60,30"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path10072" />
+        <g
+           id="g10078">
+          <g
+             stroke="none"
+             fill="#000"
+             transform="rotate(-153.43,103.5349,22.075874)"
+             style="fill:#000000;stroke:none;stroke-width:1"
+             id="g10076">
+            <path
+               d="M 12,-3 0,0 12,3 Z"
+               id="path10074" />
+          </g>
+        </g>
+      </g>
+      <g
+         class="composite-shape"
+         id="g10084">
+        <path
+           class="real"
+           d="m 100,60 c 0,-16.57 13.43,-30 30,-30 16.57,0 30,13.43 30,30 0,16.57 -13.43,30 -30,30 -16.57,0 -30,-13.43 -30,-30 z"
+           style="fill:#f0d4fe;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path10082" />
+      </g>
+      <g
+         id="g10086" />
+    </g>
+    <g
+       id="g10090" />
+    <g
+       id="g10092" />
+    <g
+       id="g10094" />
+  </svg>
+  <svg
+     width="660"
+     height="122"
+     style="font-family:Asana-Math, Asana"
+     version="1.1"
+     id="svg10130">
+    <g
+       id="g10104">
+      <g
+         id="g10102">
+        <g
+           id="g10100">
+          <text
+             x="22"
+             y="12"
+             style="font-style:normal;font-weight:400;font-size:15px;font-family:Arial, Helvetica, sans-serif;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;dominant-baseline:text-before-edge;white-space:pre;fill:#000000;fill-opacity:1;stroke:none"
+             id="text10098">DM</text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g10112">
+      <g
+         id="g10110">
+        <g
+           id="g10108">
+          <text
+             x="22"
+             y="92"
+             style="font-style:normal;font-weight:400;font-size:15px;font-family:Arial, Helvetica, sans-serif;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;dominant-baseline:text-before-edge;white-space:pre;fill:#000000;fill-opacity:1;stroke:none"
+             id="text10106">DM</text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g10120">
+      <g
+         id="g10118">
+        <g
+           id="g10116">
+          <text
+             x="212"
+             y="12"
+             style="font-style:normal;font-weight:400;font-size:15px;font-family:Arial, Helvetica, sans-serif;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;dominant-baseline:text-before-edge;white-space:pre;fill:#000000;fill-opacity:1;stroke:none"
+             id="text10114">DM</text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g10128">
+      <g
+         id="g10126">
+        <g
+           id="g10124">
+          <text
+             x="212"
+             y="91"
+             style="font-style:normal;font-weight:400;font-size:15px;font-family:Arial, Helvetica, sans-serif;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;dominant-baseline:text-before-edge;white-space:pre;fill:#000000;fill-opacity:1;stroke:none"
+             id="text10122">DM</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</svg>
