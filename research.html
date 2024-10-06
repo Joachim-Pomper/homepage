@@ -26,6 +26,28 @@
     <link rel="stylesheet" href="stylesheets/projectDisplays.css">
     <link rel="stylesheet" href="stylesheets/researchSection.css">
 
+    <style>
+        .video-thumbnail{
+            width: 350px;
+            object-fit: cover;
+            object-position: center center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .thumbnail-container{
+            padding-left: 2%;
+            padding-right: 2%;   
+            padding-bottom: 10px;
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -76,8 +98,8 @@
             <hr>
         </h2>
         <div class="text-block">
-            I won the PhD call B at the University of Pisa with the grant "Theoretical methods for detecting new physics signals".
-            I am working on topics related to gravitational waves. One of my projects deals with theorethical aspects and the detectability of an additional scalar wave polarization sourced by the QCD trace anomaly in the merger of binary Neutron stars. In another project I explore new algorithms for the global fit of LISA and the prediction of the white dwarf population.
+            I won the PhD call B at the <a class="text-link" href="https://www.unipi.it/">University of Pisa</a> with the grant "Theoretical methods for detecting new physics signals".
+            I am working on topics related to gravitational waves. One of my projects deals with theorethical aspects and the detectability of an additional scalar wave polarization sourced by the QCD trace anomaly in the merger of binary Neutron stars. In another project I try to validate a hypothesis on the quasi normal mode spectrum of black holes. Futher, I collaborate on a Fisherforcast software for current and future gravitational wave detectors, implemented in Julia.  
         </div>   
     </div>
 
@@ -104,6 +126,9 @@
             <div class="project-bottom-line">
                 <div> 06.02.2024</div>
                 <div>
+                    <a class="pdf-button" href="https://scipost.org/submissions/scipost_202403_00025v1/">
+                        SciPost submission  
+                    </a>
                     <a class="pdf-button" href="https://arxiv.org/abs/2402.04176">
                         ArXive  
                     </a>
@@ -229,22 +254,23 @@
         </div>
 
         <h3 style="text-align:center;padding-bottom:20px;">
-            Student seminars
+            University seminars
         </h3>
         <div class="project-container"> 
             <div class ="project-title">
-                Dark matter from confining SO(N)-like gauge theories with two Dirac fermions. 
+                Strongly interacting dark matter with SO(N)-QCD and dark photon portal
             </div>
             <div class="project-subtitle">
-                Student seminar [TU Vienna]
+                Seminar for PhD students [University of Stavanger]
             </div>
             <div class="abstract-block">
-                In this thesis I construct and investigate confining gauge theories in order to look for models realizing the so-called strongly interacting massive particle (SIMP) regime of dark matter. The greatest appeal of these models is that the strong self-interactions between dark matter particles may resolve some problems in structure formation, like the cusp vs. core problem. After a short introduction to SIMPs, I will discuss gauge theories based on two Dirac fermions, transforming under a real representation of the classical groups, with focus on the symmetries, symmetry breaking and emerging light fermion bounds-states, relevant for dark matter phenomenology. The dynamics of the cold dark matter may be described by a low-energy effective theory, similar to chiral perturbation theory in QCD. For SIMPs, the interactions driving the freeze out process come from 5 point vertices related to topological terms of Wess-Zumino type. I discuss their construction as well as significance for the stability of dark matter, when trying to couple the dark sector to the standard model with a dark photon mediator.
+                QCD-like theories have gained a lot of attention through the SIMP dark matter program. In these models dark pions make up the thermal dark matter and freeze-out is controlled by a cannibalizing 3->2 process, implemented by so-called Wess-Zumino-Witten (WZW) terms. Kinetic equilibirum until freeze-out is maintained via a massive dark photon portal.
+                In this seminar I will try to give a pedagogical introduction to the SIMP dark matter program and present the results of my master thesis, which dealt with the construction and effective description of these theories based on massive fermions transforming in a real representation of a dark non-abelian gauge group extend the standard model.  Special focus was put on the inclusion of vector meson states and the pseudo-scalar flavor-singlet state, related to the axial anomaly, with a more detailed phenomenological investigation of the latter. 
             </div>
             <div class="project-bottom-line">
-                <div> 06.03.2023</div>
+                <div> 25.01.2024</div>
                 <div>
-                    <a class="pdf-button" href="talks/Vienna_2023/Vienna_2023.pdf">
+                    <a class="pdf-button" href="talks/Stavanger_2024/stavanger_2024.pdf">
                         Slides.pdf  
                     </a>
                 </div>
@@ -265,8 +291,43 @@
             <div class="project-bottom-line">
                 <div> 01.02.2022</div>
                 <div>
-                    <a class="pdf-button" href="student_projects/MasterSeminar/DMPheno/MasterSeminar_Introduction_to_dak_matter_phenomenology.pdf">
+                    <a class="pdf-button" href="talks/Graz_2022/MasterSeminar_Introduction_to_dak_matter_phenomenology.pdf">
                         Slides.pdf  
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align:center;padding-bottom:20px;">
+            Outreach seminars
+        </h3>
+        <div class="project-container"> 
+            <div class ="project-title">
+                Stark wechselwirkende Dunkle Materie 
+            </div>
+            <div class="project-subtitle">
+                Occasion: Young Minds session at the ÖPG2024 - Awardee talk for the students prize 2024<br>
+                Language: German 
+            </div>
+            <div class="abstract-block">
+                I attempt to explain the topic of my master thesis research at the level of high school students, putting emphasis on the phenomenology of strongly interacting dark matter and the basic idea of a confining gauge theory. Abstract concepts like symmetries are illustrate in a comprehensive way and I try to demonstrate how a theorethical physicist can use them to make claims about dark matter. 
+            </div>
+            <div class="project-bottom-line">
+                <div> 06.03.2023</div>
+                <div>
+                    <a class="pdf-button" href="https://oepg.at/de/about/fachausschuesse/ak-young-minds">
+                        Young Minds
+                    </a>
+                    <a class="pdf-button" href="talks/Vienna_2023/Vienna_2023.pdf">
+                        Slides.pdf  
+                    </a>
+                </div>
+            </div>
+            <div class="abstract-block">
+                Also available, a 5min short summary video, related to the Young Minds Students award and the outreach talk given at the Young minds session. <br>
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=M3CvJtpZWZw&t=3s">
+                        <img class ="video-thumbnail" src="talks/OEPG_2024/thumbnail.PNG" alt="younf_minds_video_2024_">
                     </a>
                 </div>
             </div>
